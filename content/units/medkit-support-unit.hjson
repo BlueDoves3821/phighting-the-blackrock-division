@@ -1,0 +1,159 @@
+type: flying
+name: '''
+[#2CBFA2]Medkit []Support Unit
+'''
+description: '''
+Repairs ally buildings & units, rebuilds destroyed structures, cannot mine, will be targeted more.
+'''
+envDisabled: 0
+hidden: false
+health: 750
+speed: 6
+rotateSpeed: 7
+hitSize: 12
+flying: true
+priority: 4
+moveSound: loopThruster
+moveSoundVolume: 0.35
+moveSoundPitchMin: 1
+moveSoundPitchMax: 2
+engineSize: 0
+buildSpeed: 15
+engines: [
+  {
+    x: 0
+    y: -6
+    radius: 3
+    rotation: 270
+  } 
+] 
+abilities:[
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 15
+  max: 200
+  regen: 50
+  cooldown: 20
+  width: 4
+  angle: 365
+  color: 2CBFA2
+  whenShooting: false
+  pushUnits: false
+ }
+ {
+    type: RegenAbility
+    percentAmount: 0.05
+ }
+  {
+    type: MoveEffectAbility
+    color: 2CBFA2c8
+    effect: missileTrailShort
+    x: 1
+    y: -6
+    interval: 3
+    minVelocity: 0.1
+  }
+  {
+    type: MoveEffectAbility
+    color: 2CBFA2c8
+    effect: missileTrailShort
+    x: -1
+    y: -6
+    interval: 3
+    minVelocity: 0.1
+  }
+ {
+    type: RepairFieldAbility
+    amount: 1500
+    range: 100
+    reload: 120
+    healEffect: spawnShockwave
+    activeEffect: {
+      type: multiEffect
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 80
+          sizeFrom: 0
+          sizeTo: 105
+          interp: pow3Out
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: 2CBFA2FF
+          colorTo: 22927C00
+        }
+      ]
+    }
+    }
+ {
+    type: StatusFieldAbility
+    effect: medkits-regen
+    reload: 240
+    color: 2CBFA2ff
+    range: 100
+    duration: 3600
+  }
+]
+weapons: [
+  {
+    x: 0
+    y: 4
+    mirror: false
+    name: msu-healing-beam
+    continuous: true
+    alwaysContinuous: true
+    ejectEffect: none
+    shootSound: shootSublimate
+    shootSoundVolume: 0.6
+    shootY: 0
+    bullet: {
+      collides: true
+      collidesTiles: true
+      collidesAir: true
+      collidesGround: true
+      type: ContinuousFlameBulletType
+      colors: [22927C, 26A78E, 2CBFA2]
+      length: 120
+      width: 2.5
+      drawFlare: false
+      damageInterval: 5
+      damage: 6
+      hitEffect: none
+      despawnEffect: none
+      collidesTeam: true
+      healPercent: 10
+    }
+  }
+{
+     x: 1.5
+     y: 4
+     mirror: true
+     name: msu-homing-gun
+     shootSound: shootSegment
+     ejectEffect: casing1
+     reload: 8
+     bullet: {
+    type: BasicBulletType
+    damage: 20
+    speed: 9
+    width: 3
+    height: 5
+    lifetime: 40
+    ammoMultiplier: 1
+    lifesteal: 0.5
+    backColor: 26A78E
+    frontColor: 2cbfa2
+    homingPower: 0.65
+    collidesTeam: true
+    healPercent: 8
+    }
+} 
+ ]
+  research: {
+    parent: blackrock-unit-assembly
+    requirements: [
+      blackrock-token/30
+      medkit-token/30
+]
+}
