@@ -1,0 +1,25 @@
+name: "Large [#FF6A00]Zeta Biograft []Wall"
+description: '''
+Shoots out lightning when attacked, fragile.
+'''
+    type: Wall
+    placeableLiquid: true
+    health: 800
+    size: 2
+    absorbLasers: true
+    lightningChance: 250
+    lightningDamage: 70
+    lightningLength: 32
+    lightningColor: FF6A00FF
+	requirements: [
+		blackrock-token/24
+  biograft-token-zeta/24
+	]
+	category: defense
+  research: {
+    parent: biograft-zeta-wall
+    requirements: [
+      blackrock-token/48
+      biograft-token-zeta/48
+]
+}

@@ -1,0 +1,25 @@
+name: "Large [#B480FF]Beta Biograft []Wall"
+description: '''
+Shoots out lightning when attacked, fragile.
+'''
+    type: Wall
+    placeableLiquid: true
+    health: 1760
+    size: 2
+    absorbLasers: true
+    lightningChance: 250
+    lightningDamage: 120
+    lightningLength: 20
+    lightningColor: B480FFFF
+	requirements: [
+		blackrock-token/48
+  biograft-token-beta/48
+	]
+	category: defense
+  research: {
+    parent: biograft-beta-wall
+    requirements: [
+      blackrock-token/96
+      biograft-token-beta/96
+]
+}
