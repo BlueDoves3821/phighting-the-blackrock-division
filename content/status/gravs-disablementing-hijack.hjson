@@ -1,0 +1,39 @@
+name: "[#8378DF]Grav's []Disablementing Hijack"
+description: '''
+Looks like [#8378DF]they've []hijacked your units into stoppage!
+'''
+reloadMultiplier: 0
+disarm: true
+buildSpeedMultiplier: 0
+speedMultiplier: 0.1
+effectChance: 0.1
+effect: {
+    type: MultiEffect
+    effects:[coreBurn, oily, {
+    type: ParticleEffect
+    baseLength: 10
+    length: 30
+    particles: 2
+    colorFrom: 8378DFc8
+    colorTo: 645CAA00
+    sizeFrom: 6
+    sizeTo: 1
+    spin: 2
+    line: true
+    strokeFrom: 2
+    strokeTo: 0
+    lifetime: 40
+    }
+    ]
+}
+applyEffect: {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 60
+        strokeFrom: 2
+        strokeTo: 0
+        interp: sineOut
+        lifetime: 50
+        colorFrom: 8378DFC8
+        colorTo: 645CAA00
+}

@@ -1,0 +1,35 @@
+name: "[#2CBFA2]Medkit's []Regen"
+description: '''
+[#2CBFA2]"That won't be cheap."
+[]Regenerates health whilst having a slight max health boost for the duration of the status.
+'''
+healthMultiplier: 1.15
+damage: -5
+outline: false
+effectChance: 0.05
+effect: {
+type: ParticleEffect
+    baseLength: 60
+    length: 70
+    particles: 2
+    colorFrom: 2CBFA2c8
+    colorTo: 2CBFA200
+    sizeFrom: 5
+    sizeTo: 1
+    spin: 2
+    region: large-bomb
+    strokeFrom: 4
+    strokeTo: 0
+    lifetime: 180
+    }
+applyEffect: {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 50
+        strokeFrom: 2
+        strokeTo: 0
+        interp: sineOut
+        lifetime: 80
+        colorFrom: 2CBFA2c8
+        colorTo: 2CBFA200
+}

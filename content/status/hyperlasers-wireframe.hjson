@@ -1,0 +1,36 @@
+name: "[#2B90B4]Hyperlaser's []Wireframe"
+description: '''
+Reacts to hyperlaser's powershot, dealing damage.
+'''
+speedMultiplier: 0.85
+transitionDamage: 1000
+affinities: [hyperlasers-powershot]
+outline: false
+effectChance: 0.01
+effect: {
+    type: MultiEffect
+    effects: [
+   {
+			    type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 100
+        strokeFrom: 1
+        strokeTo: 3
+        interp: circleOut
+        lifetime: 240
+        colorFrom: 2B90B4C8
+        colorTo: 2B90B400
+    }
+    ]
+}
+applyEffect: {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 80
+        strokeFrom: 3
+        strokeTo: 1
+        interp: sineOut
+        lifetime: 120
+        colorFrom: ffffffc8
+        colorTo: 2B90B400
+}
