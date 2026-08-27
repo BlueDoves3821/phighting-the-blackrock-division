@@ -1,0 +1,90 @@
+  template: ErekirUnitType
+  name: '''
+Blackrock Walker
+'''
+  description: '''
+Heavy-duty ground unit, core unit of the blackrock core.
+'''
+  envDisabled: 0
+  hidden: false
+  lightRadius: 200
+  type: legs
+  canDrown: false
+  legCount: 4
+  legLength: 20
+  legSpeed: 0.5
+  legExtension: -5
+  legMoveSpace: 0.95
+  legSplashDamage: 25
+  legSplashRange: 10
+  rotateSpeed: 3
+  speed: 1.2
+  accel: 0.4
+  drag: 0.4
+  faceTarget: true
+  flying: false
+  health: 8000
+  armor: 8
+  hitSize: 20
+  lowAltitude: true
+  mineRange: 2500
+  mineFloor: true
+  mineSpeed: 60
+  mineTier: 250
+  mineWalls: true
+  itemCapacity: 1000
+  buildRange: 2500
+  buildSpeed: 60
+  mineBeamOffset: 10
+  stepSound: walkerStepSmall
+  stepSoundPitch: 1
+abilities:[
+ {
+  type:ShieldArcAbility
+  y: 0
+  radius: 35
+  max: 5000
+  regen: 5
+  cooldown: 640
+  width: 3
+  angle: 365
+  color: 646567
+  deflectChance: 10
+  whenShooting: false
+ }
+]
+weapons: [
+    {
+        rotate: false
+        mirror: true
+        name: bw-laser
+        y: 4.4
+        x: 5.6
+        reload: 3
+        recoil: 0
+        shootSound: shootLaser
+        layerOffset: -1
+        
+    bullet: {
+  type: LaserBulletType
+    damage: 250
+    sideLength: 5
+    sideWidth: 0
+    lifetime: 18
+    length: 400
+    pierce: true
+    colors: [
+      646567,
+      515151,
+      3C3837,
+      111010
+    ]
+}
+}
+]
+research: {
+    parent: blackrock-unit-assembly
+    requirements: [
+blackrock-token/150
+]
+}
