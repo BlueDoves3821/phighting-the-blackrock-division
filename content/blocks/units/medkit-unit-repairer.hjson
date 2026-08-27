@@ -1,0 +1,27 @@
+type: RepairTurret
+name: "[#2CBFA2]Medkit []Unit Repairer"
+description: "Repairs the closest unit nears it's vincinity, can take coolant for extra healing."
+health: 550
+size: 2
+repairSpeed: 6
+laserColor: 2CBFA2FF
+beamWidth: 0.9
+pulseRadius: 5
+repairRadius: 200
+consumes: {
+  power: 0.5
+}
+liquidCapacity: 60
+coolEffect: fuelburn
+coolantMultiplier: 2.5
+acceptCoolant: true
+researchCost: [
+  blackrock-token/80
+  medkit-token/80
+]
+category: units
+research: medkit-token-exchanger
+requirements: [
+  blackrock-token/40
+  medkit-token/40
+]
