@@ -1,0 +1,23 @@
+type: BeamDrill
+
+name: "Blackrock Laser Drill (Wall)"
+description: "Mines ores from walls, nothing much to say about it."
+requirements: [
+  blackrock-token/30
+]
+drillTime: 20
+health: 500
+tier: 15
+hardnessDrillMultiplier: 1
+size: 2
+itemCapacity: 200
+hasLiquids: false
+range: 20
+sparkColor: ffffff
+  research: {
+    parent: blackrock-laser-drill-floor
+    requirements: [
+    blackrock-token/60
+]
+}
+category: production

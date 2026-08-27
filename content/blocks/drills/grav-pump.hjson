@@ -1,0 +1,24 @@
+  name: "[#8378DF]Grav []Pump",
+  description: '''
+Upgraded pump, does not require power to operate, can be placed in deep liquids.
+'''
+  type: Pump
+  size: 2
+  health: 500
+  liquidCapacity: 500
+  pumpAmount: 0.85
+  hasPower: false
+  placeableLiquid: true
+  squareSprite: false
+	requirements: [
+		blackrock-token/40
+  grav-token/40
+	]
+	category: liquid
+  research: {
+    parent: grav-token-exchanger
+    requirements: [
+      blackrock-token/80
+      grav-token/80
+]
+}

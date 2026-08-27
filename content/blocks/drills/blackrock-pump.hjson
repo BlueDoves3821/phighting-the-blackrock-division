@@ -1,0 +1,22 @@
+  name: "Blackrock Pump",
+  description: '''
+Does not require power to operate, can be placed in deep liquids.
+'''
+  type: Pump
+  size: 1
+  health: 250
+  liquidCapacity: 200
+  pumpAmount: 0.5
+  hasPower: false
+  placeableLiquid: true
+  squareSprite: false
+	requirements: [
+		blackrock-token/20
+	]
+	category: liquid
+  research: {
+    parent: blackrock-conduit
+    requirements: [
+      blackrock-token/40
+]
+}
