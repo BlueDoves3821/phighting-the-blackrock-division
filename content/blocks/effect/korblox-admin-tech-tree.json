@@ -1,0 +1,14 @@
+{  
+    "localizedName": "The KORBLOX Administration",
+    "description": "The ruling faction of blackrock, this is where you research materials, structures & units.",
+    "alwaysUnlocked": true,
+    "buildVisibility": "editorOnly",
+    "type": "LightBlock",
+    "health": 800,
+    "size": 2,
+   "research": {
+  "root": true,
+  "name": "The KORBLOX Administration",
+  "requiresUnlock": false
+}
+}
