@@ -1,0 +1,19 @@
+  type: Duct
+  name: "Blackrock Duct"
+  description: "A simple blackrock duct, nothing fancy about it."
+  size: 1
+  health: 50
+  itemCapacity: 2
+  speed: 3
+  bridgeReplacement: blackrock-bridge
+  junctionReplacement: blackrock-junction
+	requirements: [
+		blackrock-token/1
+	]
+	category: distribution
+  research: {
+    parent: blackrock-token-factory
+    requirements: [
+      blackrock-token/10
+]
+}
