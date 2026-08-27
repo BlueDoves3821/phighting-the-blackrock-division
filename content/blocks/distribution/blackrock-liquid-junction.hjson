@@ -1,0 +1,18 @@
+ type: LiquidJunction
+ name: "Blackrock Liquid Junction",
+ "description": "Allows 2 conduits to cross eachother.",
+ health: 55
+ speed: 1
+ capacity: 5
+ size: 1
+ placeableLiquid: true
+	requirements: [
+		blackrock-token/2
+	]
+	category:  liquid
+  research: {
+    parent: blackrock-conduit
+    requirements: [
+      blackrock-token/4
+]
+}

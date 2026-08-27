@@ -1,0 +1,20 @@
+  type: Conduit
+  category: liquid
+  name: "Blackrock Conduit",
+  description: "A simple conduit, does not leak."
+  leaks: false
+  health: 50
+  liquidCapacity: 30
+  placeableLiquid: true
+  liquidPressure: 5
+  bridgeReplacement: blackrock-liquid-bridge
+  junctionReplacement: blackrock-liquid-junction
+	requirements: [
+		blackrock-token/1
+	]
+  research: {
+    parent: blackrock-token-factory
+    requirements: [
+      blackrock-token/10
+]
+}

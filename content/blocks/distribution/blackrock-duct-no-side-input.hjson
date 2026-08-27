@@ -1,0 +1,20 @@
+  type: Duct
+  name: "Blackrock Duct (No Side Input)"
+  description: "A simple blackrock duct, nothing fancy about it."
+  size: 1
+  health: 50
+  itemCapacity: 2
+  speed: 3
+  armored: true
+  bridgeReplacement: blackrock-bridge
+  junctionReplacement: blackrock-junction
+	requirements: [
+		blackrock-token/1
+	]
+	category: distribution
+  research: {
+    parent: blackrock-duct
+    requirements: [
+      blackrock-token/10
+]
+}

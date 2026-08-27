@@ -1,0 +1,19 @@
+type: StackConveyor
+name: "Blackrock Stack Duct"
+description: '''
+Moves items in stacks.
+'''
+health: 90
+speed: 0.15
+itemCapacity: 5
+category: distribution
+bridgeReplacement: blackrock-mass-driver
+requirements: [
+blackrock-token/2
+]
+research: {
+    parent: blackrock-token-factory
+    requirements: [
+blackrock-token/4
+]
+}

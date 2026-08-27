@@ -1,0 +1,30 @@
+  type: MassDriver
+  name: "Blackrock Mass Driver"
+  health: 80
+  description: '''
+A tiny, but high ranged mass driver used for crossing terrain & buildings, cannot be overdriven.
+'''
+  itemCapacity: 5
+  canOverdrive: false
+  squareSprite: false
+  reload: 5
+  shake: 0.5
+  rotateSpeed: 3.5
+  hasPower: false
+  knockback: 0.5
+  range: 1200
+  bulletLifetime: 90
+  bulletSpeed: 20
+  minDistribute: 2
+  shootEffect: shootSmall
+  size: 1
+  requirements: [
+      blackrock-token/5
+  ]
+  category: distribution
+  research: {
+    parent: blackrock-stack-duct
+    requirements: [
+      blackrock-token/10
+]
+}

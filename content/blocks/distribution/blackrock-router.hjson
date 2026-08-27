@@ -1,0 +1,17 @@
+ type: Router
+ name: "Blackrock Router",
+ description: "Distributes items in 3 directions."
+ health: 65
+ speed: 1
+ capacity: 2
+ size: 1
+	requirements: [
+		blackrock-token/3
+	]
+	 category: distribution
+  research: {
+    parent: blackrock-duct
+    requirements: [
+     blackrock-token/6
+]
+}

@@ -1,0 +1,20 @@
+  type: ArmoredConduit
+  category: liquid
+  name: "Blackrock Conduit (No Side-Input)",
+  description: "A simple conduit, does not leak, does not allow side-inputs."
+  leaks: false
+  health: 50
+  liquidCapacity: 30
+  placeableLiquid: true
+  liquidPressure: 1.9
+  bridgeReplacement: blackrock-liquid-bridge
+  junctionReplacement: blackrock-liquid-junction
+	requirements: [
+		blackrock-token/1
+	]
+  research: {
+    parent: blackrock-conduit
+    requirements: [
+      blackrock-token/10
+]
+}

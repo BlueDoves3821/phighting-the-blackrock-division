@@ -1,0 +1,17 @@
+name: "Blackrock Unloader"
+description: '''
+Fast unloading speed.
+'''
+	type: Unloader
+	health: 120
+	speed: 0.45
+	requirements: [
+		blackrock-token/10
+	]
+	category: distribution
+  research: {
+    parent: blackrock-duct
+    requirements: [
+      blackrock-token/20
+]
+}

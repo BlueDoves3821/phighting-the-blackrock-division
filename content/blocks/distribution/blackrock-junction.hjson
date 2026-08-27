@@ -1,0 +1,17 @@
+ type: Junction
+ name: "Blackrock Junction",
+ "description": "Allows 2 ducts to cross eachother.",
+ health: 50
+ speed: 1
+ capacity: 5
+ size: 1
+	requirements: [
+		blackrock-token/2
+	]
+	category: distribution
+  research: {
+    parent: blackrock-duct
+    requirements: [
+      blackrock-token/4
+]
+}
