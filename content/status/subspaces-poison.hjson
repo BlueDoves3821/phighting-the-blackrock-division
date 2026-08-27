@@ -1,0 +1,17 @@
+name: "[#FF0066]Subspace's []Poison"
+description: '''
+Looks like the posion must've gotten into you!
+'''
+speedMultiplier: 0.9
+healthMultiplier: 0.95
+intervalDamage: 50
+intervalDamageTime: 30
+effect: {
+  length: 10
+  lifetime: 65
+  particles: 1
+  colorFrom: FF0066ff
+  colorTo: C3004E00
+  sizeFrom: 0
+  sizeTo: 4
+}
