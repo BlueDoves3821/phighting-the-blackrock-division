@@ -1,0 +1,10 @@
+name: "Blackrock Token"
+description: '''
+Structures, units & anything in between depends on this material,
+can be exchanged for other tokens.
+'''
+color: 646567
+  research: {
+    parent: korblox-admin-tech-tree
+    requirements: []
+}
