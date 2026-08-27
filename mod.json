@@ -1,0 +1,21 @@
+{
+  "displayName": "PHIGHTING! THE BLACKROCK DIVISION",
+  "name": "phighting-blackrock",
+  "author": "BlueDoves3821",
+  "description": '''
+[#ffffff[]]Note: this mod won't be worked on as much, updates will be slow, sorry about that!
+
+[#FF0066[]]Technology is the future!
+
+[#ffffff[]]The KORBLOX Administration has given you a task:
+they've recently finished building an experimental core, you're given a blackrock token factory to produce tokens, and there's only one goal: capture the sector by any means.
+
+Research materials, construct structures & units, take down the enemy, at the end of the day...
+
+[grey[]]Blackrock Shall Prevail.
+'''
+  "subtitle": "Blackrock shall prevail.",
+  "minGameVersion": "136.1",
+  "version": "Alpha 0.1"
+  "hideBrowser": "true"
+}
