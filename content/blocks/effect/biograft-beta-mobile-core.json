@@ -1,0 +1,26 @@
+{
+  "name": "[#B480FF]Beta Biograft []Mobile Core",
+  "description": "A core designed for mobile bases, can be upgraded to any core that's larger than 2x2, fragile if left unprotected, explodes when destroyed.
+[red]disclaimer: avoid deconstructing this core if it's the only core in the sector!",
+  "details": "upgrading a mobile core is permanent, it cannot be dscontructed.",
+  "size": 2,
+  "health": 1700,
+  "itemCapacity": 9200,
+  "armor": 5,
+  "requirements": [
+    { "item": "blackrock-token", "amount": 420}
+    { "item": "biograft-token-beta", "amount": 420}
+    { "item": "subspace-token", "amount": 250}
+  ],
+  "category": "effect",
+  "research": {
+    "parent": "biograft-token-beta-exchanger",
+    "requirements": [
+      "blackrock-token/840"
+      "biograft-token-beta/840"
+      "subspace-token/500"
+    ]
+  },
+  "unitType": "biograft-beta-flying-unit",
+  "unitCapModifier": 25,
+}

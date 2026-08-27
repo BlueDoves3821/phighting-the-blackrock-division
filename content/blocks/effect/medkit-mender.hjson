@@ -1,0 +1,37 @@
+name: "[#2CBFA2]Medkit []Mender"
+description: '''
+A high-ranged mender, slowly repairs buildings, can optionally take [#2CBFA2]medkit []tokens for increased ranged & healing speed.
+'''
+type: MendProjector
+category: effect
+hasBoost: true
+hasPower: false
+hasItems: true
+size: 2
+healPercent: 5
+reload: 120
+phaseBoost: 10
+phaseRangeBoost: 100
+range: 250
+health: 750
+itemCapacity: 20
+baseColor: 2CBFA2
+phaseColor: 2CBFA2
+consumes: {
+        items: {
+        items: [
+        medkit-token/2
+        ]
+        booster: true
+        optional: true
+        }
+    }
+researchCost: [
+  blackrock-token/180
+  medkit-token/180
+]
+research: medkit-token-exchanger
+requirements: [
+  blackrock-token/90
+  medkit-token/90
+]

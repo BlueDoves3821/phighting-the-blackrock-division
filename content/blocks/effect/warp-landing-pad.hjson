@@ -1,0 +1,25 @@
+name: '''
+[#A82D2F]Warp []Landing Pad
+'''
+description: A compact landing pad with a quick cooldown time, does not require water. (despite what the info tells you)
+type: LandingPad
+itemCapacity: 175
+hasItems: true
+health: 800
+consumeLiquid: water
+consumeLiquidAmount: 0
+liquidCapacity: 0
+coolingEffectChance: 1
+coolingEffect: smokeCloud
+size: 3
+cooldownTime: 30
+arrivalDuration: 150
+researchCost: [
+  blackrock-token/100
+]
+category: effect
+research: warp-launch-pad
+requirements: [
+  blackrock-token/50
+  warp-token/50
+]

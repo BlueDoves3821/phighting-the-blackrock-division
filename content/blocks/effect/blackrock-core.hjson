@@ -1,0 +1,23 @@
+type: CoreBlock
+name: '''
+Blackrock []Core
+'''
+description: '''
+An armored blackrock core, larger storage space.
+'''
+health: 5200
+armor: 5
+itemCapacity: 15000
+size: 3
+category: effect
+unitType: blackrock-walker
+unitCapModifier: 25
+requirements: [
+  blackrock-token/850
+]
+research: {
+    parent: blackrock-token-factory
+    requirements: [
+blackrock-token/1700
+]
+}

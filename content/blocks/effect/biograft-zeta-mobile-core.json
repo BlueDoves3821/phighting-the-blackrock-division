@@ -1,0 +1,26 @@
+{
+  "name": "[#FF6A00]Zeta Biograft []Mobile Core",
+  "description": "A core designed for mobile bases, can be upgraded to any core that's larger than 2x2, fragile if left unprotected, explodes when destroyed.
+[red]disclaimer: avoid deconstructing this core if it's the only core in the sector!",
+  "details": "upgrading a mobile core is permanent, it cannot be dscontructed.",
+  "size": 2,
+  "health": 1200,
+  "itemCapacity": 8500,
+  "armor": 5,
+  "requirements": [
+    { "item": "blackrock-token", "amount": 400}
+    { "item": "biograft-token-zeta", "amount": 400}
+    { "item": "subspace-token", "amount": 200}
+  ],
+  "category": "effect",
+  "research": {
+    "parent": "biograft-token-zeta-exchanger",
+    "requirements": [
+      "blackrock-token/800"
+      "biograft-token-zeta/800"
+      "subspace-token/400"
+    ]
+  },
+  "unitType": "biograft-zeta-flying-unit",
+  "unitCapModifier": 20,
+}
