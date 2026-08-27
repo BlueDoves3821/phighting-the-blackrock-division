@@ -1,0 +1,25 @@
+type: GenericCrafter
+name: "Blackrock Token Factory"
+description: '''
+Standard-issue production factory, creates blackrock tokens.
+'''
+size: 3
+health: 640
+itemCapacity: 100
+craftEffect: shockwaveSmaller
+consumes: {
+  items: [
+  ]
+}
+craftTime: 10
+outputItems: [
+   blackrock-token/2
+]
+  research: {
+    parent: korblox-admin-tech-tree
+    requirements: [
+]
+}
+category: crafting
+requirements: [
+]
