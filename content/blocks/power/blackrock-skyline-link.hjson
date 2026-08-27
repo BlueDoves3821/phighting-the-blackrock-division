@@ -1,0 +1,23 @@
+type: LongPowerNode
+name: "Blackrock Skyline Link"
+description: "Transmits power over long distances, has very limited connections."
+fogRadius: 10
+laserRange: 350
+health: 750
+maxNodes: 3
+size: 3
+squareSprite: false
+researchCost: [
+  blackrock-token/160
+]
+category: power
+research: blackrock-beam-node
+requirements: [
+  blackrock-token/80
+]
+laserScale: 0.8
+laserColor1: ffffffff
+laserColor2: c8c8c8ff
+useLod: false
+sameBlockConnection: false
+powerLayer: 77

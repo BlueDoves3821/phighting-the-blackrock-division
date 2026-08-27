@@ -1,0 +1,46 @@
+type: ConsumeGenerator
+name: "Blackrock Windcatcher"
+description: '''
+Generates power via wind energy, good for early-game power production.
+'''
+size: 1
+health: 250
+category: power
+consumeEffect: none
+squareSprite: false
+ambientSound: loopMachineSpin
+ambientSoundVolume: 0.1
+requirements: [
+  blackrock-token/10
+]
+consumes: {
+items: [
+]
+}
+itemDuration: 1200
+powerProduction: 2
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-spinner"
+      spinSprite: true
+      rotateSpeed: 4
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: "-top"
+    }
+  ]
+}
+category: power
+research: {
+    parent: blackrock-token-factory
+    requirements: [
+      blackrock-token/20
+]
+}

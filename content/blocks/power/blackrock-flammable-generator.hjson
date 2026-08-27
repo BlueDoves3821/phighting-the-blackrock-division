@@ -1,0 +1,44 @@
+  name: "Blackrock Flammable Generator"
+  description: '''
+Generates power by igniting flammable materials.
+  '''
+  type: ConsumeGenerator
+  size: 2
+  health: 500
+  hasItems: true
+  itemCapacity: 50
+  ambientSound: loopCombustion
+  ambientSoundVolume: 0.25
+  powerProduction: 5
+  itemDuration: 600
+  generateEffect: rocketSmokeLarge
+  consumes:
+  {
+    itemFlammable: {}
+  }
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: "-spinner"
+      spinSprite: true
+      rotateSpeed: 8
+    }
+    {
+      type: DrawRegion
+      suffix: "-top"
+    }
+  ]
+}
+researchCost: [
+  blackrock-token/80
+]
+category: power
+research: blackrock-token-factory
+requirements: [
+  blackrock-token/40
+]
