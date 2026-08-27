@@ -1,0 +1,33 @@
+Name: "Blackrock Unit Assembly"
+description: '''
+Constructs blackrock units.
+'''
+type: UnitFactory
+size: 3
+consumesPower: false
+createSound: unitCreate
+plans: [
+   {
+    unit: blackrock-walker
+    time: 1200
+    requirements: [
+blackrock-token/150
+    ]
+}
+   {
+    unit: medkit-support-unit
+    time: 600
+    requirements: [
+blackrock-token/30
+medkit-token/30
+    ]
+}
+]
+researchCost: [
+  blackrock-token/200
+]
+category: units
+research: blackrock-token-factory
+requirements: [
+  blackrock-token/100
+]

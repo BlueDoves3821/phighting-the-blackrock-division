@@ -1,0 +1,46 @@
+Name: "[#FF0066]Subspace's []Biograft Assembly"
+description: '''
+"[#FF0066]That [][#ff8b35]prick [][#FF0066]thinks he can get away!!
+Catch him!![]"
+Constructs biograft units, can either use [#FF6A00]zeta []or [#B480FF]beta []tokens.
+'''
+type: UnitFactory
+size: 3
+consumesPower: false
+createSound: unitCreateBig
+plans: [
+   {
+    unit: biograft-beta-flying-unit
+    time: 600
+    requirements: [
+blackrock-token/60
+biograft-token-beta/60
+    ]
+ }
+   {
+    unit: biograft-beta-overdriver
+    time: 300
+    requirements: [
+blackrock-token/20
+biograft-token-beta/20
+    ]
+ }
+   {
+    unit: biograft-zeta-flying-unit
+    time: 600
+    requirements: [
+blackrock-token/50
+biograft-token-zeta/50
+    ]
+ }
+]
+researchCost: [
+  blackrock-token/300
+  subspace-token/200
+]
+category: units
+research: subspace-token-exchanger
+requirements: [
+  blackrock-token/150
+  subspace-token/100
+]
