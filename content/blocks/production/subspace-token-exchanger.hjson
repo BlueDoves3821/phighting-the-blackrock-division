@@ -1,0 +1,28 @@
+type: GenericCrafter
+name: "[#FF0066]Subspace []Token Exchanger"
+description: '''
+Exchanges a blackrock token for a [#FF0066]subspace []token.
+'''
+size: 2
+health: 400
+itemCapacity: 50
+consumes: {
+  items: [
+    blackrock-token/1
+  ]
+}
+craftEffect: hitLaserColor
+craftTime: 10
+outputItems: [
+   subspace-token/1
+]
+research: {
+    parent: korblox-admin-tech-tree
+    requirements: [
+    blackrock-token/100
+]
+}
+category: crafting
+requirements: [
+  blackrock-token/50
+]

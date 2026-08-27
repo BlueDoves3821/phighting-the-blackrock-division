@@ -1,0 +1,31 @@
+type: GenericCrafter
+name: "[#FF6A00]Biograft []Token Exchanger (Zeta)"
+description: '''
+Exchanges both blackrock token & [#FF0066]subspace []token for a [#FF6A00]zeta biograft []token.
+'''
+size: 2
+health: 400
+itemCapacity: 50
+consumes: {
+  items: [
+    blackrock-token/1
+    subspace-token/1
+  ]
+}
+craftEffect: hitLaserColor
+craftTime: 10
+outputItems: [
+   biograft-token-zeta/1
+]
+research: {
+    parent: korblox-admin-tech-tree
+    requirements: [
+    blackrock-token/100
+    subspace-token/50
+]
+}
+category: crafting
+requirements: [
+  blackrock-token/50
+  subspace-token/25
+]

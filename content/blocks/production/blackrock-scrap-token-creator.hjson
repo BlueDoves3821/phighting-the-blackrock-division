@@ -1,0 +1,38 @@
+type: Separator
+  name: "Blackrock Scrap Token Creator"
+  description: "Combines scrap & blackrock tokens to create one out of 8 tokens, used in areas where scrap is available, do not build if there aren't none."
+	size: 3
+ itemCapacity: 200
+ health: 1000
+	craftTime: 5
+	hasItems: true
+	hasLiquids: false
+	hasPower: true
+ ambientSound: loopCutter
+ ambientSoundVolume: 2
+ craftEffect: hitLaserColor
+	consumes: {
+		power: 2.5
+   items: [
+    scrap/4
+    blackrock-token/1
+  ]
+	}
+researchCost: [
+  blackrock-token/600
+]
+research: blackrock-token-factory
+requirements: [
+  blackrock-token/300
+]
+	category: crafting
+	results: [
+		biograft-token-beta/1
+  biograft-token-zeta/1
+  coil-2.0-token/1
+  grav-token/1
+  hyperlaser-token/1
+  medkit-token/1
+  subspace-token/1
+  warp-token/1
+	]

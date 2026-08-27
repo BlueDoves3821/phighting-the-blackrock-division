@@ -1,0 +1,28 @@
+type: GenericCrafter
+name: "[#2CBFA2]Medkit []Token Exchanger"
+description: '''
+Exchanges a blackrock token for a [#2CBFA2]Medkit []token.
+'''
+size: 2
+health: 400
+itemCapacity: 50
+consumes: {
+  items: [
+    blackrock-token/1
+  ]
+}
+craftEffect: hitLaserColor
+craftTime: 10
+outputItems: [
+   medkit-token/1
+]
+research: {
+    parent: korblox-admin-tech-tree
+    requirements: [
+    blackrock-token/100
+]
+}
+category: crafting
+requirements: [
+  blackrock-token/50
+]
