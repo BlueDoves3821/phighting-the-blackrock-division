@@ -1,0 +1,18 @@
+type: BeamNode
+name: "Blackrock Beam Node"
+description: "Distributes power in fixed lines, cannot store power."
+health: 120
+fogRadius: 2
+range: 10
+size: 1
+squareSprite: false
+researchCost: [
+  blackrock-token/10
+]
+category: power
+research: blackrock-windcatcher
+requirements: [
+  blackrock-token/5
+]
+laserColor1: FFFFFFff
+laserColor2: C8C8C8ff
