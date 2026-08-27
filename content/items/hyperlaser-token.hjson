@@ -1,0 +1,10 @@
+name: "[#2B90B4]Hyperlaser []Token"
+description: '''
+[#2B90B4]"Target spotted."
+[]Precision-based token, used for precision structures & attacks.
+'''
+color: 2B90B4
+  research: {
+    parent: blackrock-token
+    requirements: []
+}

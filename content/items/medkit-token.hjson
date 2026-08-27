@@ -1,0 +1,13 @@
+name: "[#2CBFA2]Medkit []Token"
+description: '''
+[#2CBFA2]"How much will i get paid for this?"
+[]Support-based token, Heals allies when used defensively.
+'''
+color: 2CBFA2
+details: '''
+despite being a traitor after attacking one of the [#FF0066]scientists[], his research & assets are a coveted asset that you'll use for your journey.
+'''
+  research: {
+    parent: blackrock-token
+    requirements: []
+}

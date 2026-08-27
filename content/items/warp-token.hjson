@@ -1,0 +1,15 @@
+name: "[#A82D2F]Warp []Token"
+description: '''
+[#A82D2F]Current Status: Unknown.
+[]Transportation-based token, Not much is known about this scientist, if they're even alive at this point.
+'''
+details: '''
+in an old photo that [#ff5959]he []carries around, looks like warp used to work with a [#2CBFA2]traitor []& an another [#8378DF]unknown scientist[].
+'''
+color: A82D2F
+flammability: 1
+explosiveness: 0.25
+  research: {
+    parent: blackrock-token
+    requirements: []
+}

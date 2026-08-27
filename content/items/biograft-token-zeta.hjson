@@ -1,0 +1,12 @@
+name: "[#FF6A00]Biograft []Token (Zeta)"
+description: '''
+[#FF6A00]"OBJECTIVE: KILL ALL, END ALL!"
+[]Offensive-based token, high mobility, attacking structures built with this token are fragile, but can dish out a lot of damage.
+'''
+color: FF6A00
+charge: 1.1
+explosiveness: 0.25
+  research: {
+    parent: subspace-token
+    requirements: []
+}

@@ -1,0 +1,15 @@
+name: "[#8378DF]Grav []Token"
+description: '''
+[#8378DF]Current Status: Unknown.
+[]Both liquid-based & defensive-based token, Not much is known about this scientist, if they're even alive at this point, their current gear is not what they've spawned with.
+'''
+details: '''
+in an old photo that [#ff5959]he []carries around, looks like grav used to work with a [#2CBFA2]traitor []& an another [#A82D2F]unknown scientist[].
+'''
+color: 8378DF
+charge: 0.7
+explosiveness: 0.75
+  research: {
+    parent: blackrock-token
+    requirements: []
+}

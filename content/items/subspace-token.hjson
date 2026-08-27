@@ -1,0 +1,12 @@
+name: "[#FF0066]Subspace []Token"
+description: '''
+[#FF0066]"Let's see if my hypothesis is correct!"
+[]Technology-based token, used for more complex structures, when used as ammo, it inflicts poision onto units.
+'''
+color: FF0066
+radioactivity: 1.35
+explosiveness: .35
+  research: {
+    parent: blackrock-token
+    requirements: []
+}

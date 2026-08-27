@@ -1,0 +1,12 @@
+name: "[#A31B1D]Coil 2.0 []Token"
+description: '''
+[#A31B1D]"This is gonna hurt, for them, that is."
+[]Support-based token, In an alternative timeline, coil is a [#FF6A00]biograft[]-esque creation that came from blackrock instead of playground, great defensive & offense capabilities.
+'''
+color: A31B1D
+charge: 1
+explosiveness: 0.2
+  research: {
+    parent: blackrock-token
+    requirements: []
+}

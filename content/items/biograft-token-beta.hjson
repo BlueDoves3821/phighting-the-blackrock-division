@@ -1,0 +1,12 @@
+name: "[#B480FF]Biograft []Token (Beta)"
+description: '''
+[#B480FF]"YOUR END IS NOW."
+[]Tank-based token, being a upgraded form of biograft compared to it's [#FF6A00]zeta []counterpart, it has higher defensive capabilities.
+'''
+color: B480FF
+charge: 2
+explosiveness: 0.5
+  research: {
+    parent: subspace-token
+    requirements: []
+}
