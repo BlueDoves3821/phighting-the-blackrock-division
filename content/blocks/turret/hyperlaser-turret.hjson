@@ -1,0 +1,129 @@
+type: ItemTurret
+name: "[#2B90B4]Hyperlaser []Turret",
+description: "Long ranged laser turret, applies powershot onto units.",
+    targetAir: true
+    targetGround: true
+    health: 1200
+    size: 3
+    reload: 50
+    squareSprite: false
+    unitSort: leastArmor
+    fogRadiusMultiplier: 0.5
+    rotateSpeed: 3
+    range: 540
+    maxAmmo: 50
+    shoot: {
+    firstShotDelay: 32
+    }
+    soundPitchMin: 1
+    soundPitchMax: 1
+    chargeSound: hyperlaser-charge
+    drawer: {
+    type: DrawTurret
+    basePrefix: reinforced-
+    parts: [
+    {
+    suffix: "-barrel"
+    progress: recoil
+    under: true
+    moveY: -1
+    }
+    ]
+    }
+    ammoTypes: {
+    hyperlaser-token: {
+    type: LaserBulletType
+    ammoMultiplier: 10
+    damage: 950
+    inaccuracy: 0
+    width: 15
+    sideLength: 8
+    sideWidth: 1
+    lifetime: 30
+    length: 540
+    pierceArmor: true
+    pierce: true
+    pierceCap: 20
+    inaccuracy: 0
+    shootCone: 2
+    shootSound: hyperlaser-shoot
+    status: hyperlasers-powershot
+    statusDuration: 2400
+    colors: [
+      216E8A,
+      267E9D,
+      2B90B4,
+      ffffff
+    ]
+    shootEffect: [
+      {
+        length: 150
+        cone: 10
+        lifetime: 60
+        particles: 15
+        colorFrom: 2B90B4c8
+        colorTo: 216E8A00
+        sizeFrom: 5
+        sizeTo: 0
+      }
+      {
+        length: 180
+        cone: 15
+        lifetime: 60
+        particles: 12
+        colorFrom: 2B90B4c8
+        colorTo: 216E8A00
+        sizeFrom: 3
+        sizeTo: 1
+      }
+      {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 40
+        strokeFrom: 3
+        strokeTo: 1
+        interp: sineOut
+        lifetime: 80
+        colorFrom: 2B90B4c8
+        colorTo: 216E8A00
+       }
+    ]
+    chargeEffect: [
+    {
+        type: WaveEffect
+        sizeFrom: 32
+        sizeTo: 0
+        strokeFrom: 0
+        strokeTo: 3
+        interp: circleOut
+        lifetime: 32
+        colorFrom: 216E8A00
+        colorTo: 2B90B4c8
+     }
+     ]
+    hitEffect: [
+      {
+        line: true
+        length: 60
+        lifetime: 15
+        particles: 10
+        colorFrom: 2B90B4FF
+        colorTo: 216E8A00
+        lenFrom: 2
+        lenTo: 0
+        strokeFrom: 1
+        strokeTo: 0
+      }
+    ]
+  }
+    },
+researchCost: [
+  blackrock-token/260
+  hyperlaser-token/260
+]
+category: turret
+research: hyperlaser-wireframer
+requirements: [
+  blackrock-token/130
+  hyperlaser-token/130
+]

@@ -1,0 +1,116 @@
+type: ItemTurret
+name: "[#FF0066]Subspace []Noxious Void Launcher",
+description: "Fires a noxious void that pulls in units caught in the radius, then explodes, applying alot of damage.",
+    targetAir: true
+    targetGround: true
+    health: 1300
+    size: 4
+    reload: 240
+    xRand: 0
+    squareSprite: false
+    unitSort: weakest
+    coolantMultiplier: 4
+    fogRadiusMultiplier: 0.5
+    liquidCapacity: 60
+    consumes: {
+    coolant: {
+      amount: 0.2
+    }
+  }
+    rotateSpeed: 2
+    shots: 1
+    range: 800
+    maxAmmo: 10
+    drawer: {
+    type: DrawTurret
+    basePrefix: reinforced-
+    parts: [
+    {
+    suffix: "-barrel"
+    progress: recoil
+    under: true
+    moveY: -1.5
+    }
+    {
+    suffix: "-cooldown"
+    progress: reload
+    color: FF0066FF
+    colorTo: C3004E00
+    top: true
+    outline: false
+    y: 0
+    }
+    ]
+    }
+    ammoTypes: {
+    subspace-token: {
+    type: ArtilleryBulletType
+    trailWidth: 8
+    trailLength: 15
+    frontColor: FF0066
+    backColor: DF0059
+    trailColor: C3004E
+    width: 40
+    height: 40
+    spin: 2
+    speed: 3
+	   lifetime: 260
+    damage: 250
+    inaccuracy: 0
+    shootCone: 10
+    burstSpacing: 4
+    absorbable: false
+    shootEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 85
+            cone: 8
+            particles: 25
+            colorFrom: FF0066ff
+            colorTo: C3004E00
+            length: 85
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+        }
+        {
+            type: ParticleEffect
+            lifetime: 120
+            cone: 5
+            particles: 12
+            colorFrom: FF0066ff
+            colorTo: C3004E00
+            length: 85
+            sizeFrom: 12
+            sizeTo: 0
+            interp: pow5Out
+        }
+    ]
+}
+    smokeEffect: shootBigSmoke
+    shootSound: shootTank
+    	hitEffect: none
+    fragSpread: 0
+    fragBullets: 1
+    fragBullet: {
+    spawnUnit: noxious-void
+}
+    status: subspaces-poison
+    statusDuration: 1200
+    ammoMultiplier: 1
+    shrinkY: 0
+	   sprite: large-orb
+  }
+    },
+researchCost: [
+  blackrock-token/800
+  subspace-token/400
+]
+category: turret
+research: blackrock-turret
+requirements: [
+  blackrock-token/400
+  subspace-token/200
+]

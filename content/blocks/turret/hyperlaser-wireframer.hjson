@@ -1,0 +1,111 @@
+type: ItemTurret
+name: "[#2B90B4]Hyperlaser []Wireframer"
+description: '''
+Wireframes units in a radius, requires synergy with other blackrock turrets that use [#2B90B4]hyperlaser []ammo.
+'''
+size: 2
+health: 800
+squareSprite: false
+range: 300
+maxAmmo: 10
+reload: 90
+inaccuracy: 0
+shootCone: 360
+rotateSpeed: 0
+soundPitchMin: 1
+soundPitchMax: 1
+loopSound: none
+chargeSound: wireframer-charge
+shootY: 0
+recoil: 0
+shoot: {
+firstShotDelay: 45
+}
+drawer: {
+    type: DrawTurret
+    basePrefix: reinforced-
+    }
+ ammoTypes: {
+    hyperlaser-token: {
+        type: MissileBulletType
+        splashDamageRadius: 300
+        splashDamage: 20
+        splashDamagePierce: true
+        width: 0.05
+        height: 0.05
+        speed: 0
+        lifetime: 0
+        damage: 0
+        instantDisappear: true
+        collides: false
+        status: hyperlasers-wireframe
+        statusDuration: 3600
+        despawnEffect: none
+        trailEffect: none
+        shootSound: wireframer-shoot
+        shootEffect: {
+            type: MultiEffect
+                effects: [
+        {
+            type: WaveEffect
+            sizeFrom: 300
+            sizeTo: 450
+            strokeFrom: 6
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 240
+            colorFrom: 8CFBFFC8
+            colorTo: 2B90B400
+        }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 300
+            sizeTo: 300
+            interp: exp5Out
+            colorFrom: 8CFBFFC8
+            colorTo: 2B90B400
+            lifetime: 240
+            particles: 1
+        }
+
+                ]
+            }
+chargeEffect: {
+type: MultiEffect
+    effects: [
+    {
+    type: WaveEffect
+    lifetime: 45
+    sizeFrom: 300
+    sizeTo: 300
+    interp: exp5Out
+    strokeFrom: 0
+    strokeTo: 4
+    colorFrom: 2B90B400
+    colorTo: 8CFBFFC8
+}
+    {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 0
+    sizeTo: 300
+    length: 0
+    lifetime: 45
+    colorFrom: 2B90B400
+    colorTo: 8CFBFF40
+    }
+]
+}
+     }
+   }
+researchCost: [
+  blackrock-token/100
+  hyperlaser-token/100
+]
+category: turret
+research: blackrock-turret
+requirements: [
+  blackrock-token/50
+  hyperlaser-token/50
+]

@@ -1,0 +1,33 @@
+type: PointDefenseTurret
+requirements: [
+  blackrock-token/50
+  coil-2.0-token/50
+]
+name: "[#A31B1D]Coil 2.0 []Bullet Breaker"
+description: '''
+Fires at bullets instead of enemies, cannot target laser projectiles.
+'''
+category: turret
+shootLength: 5
+reload: 5
+rotateSpeed: 8
+range: 500
+size: 2
+health: 700
+bulletDamage: 1000
+squareSprite: false
+hasItems: true
+hasPower: false
+itemCapacity: 5
+consumes: {
+  items: [
+    coil-2.0-token/5
+  ]
+}
+  research: {
+    parent: blackrock-turret
+    requirements: [
+      blackrock-token/100
+      coil-2.0-token/100
+]
+}

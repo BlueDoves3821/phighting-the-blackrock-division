@@ -1,0 +1,85 @@
+type: ItemTurret
+name: "[#2CBFA2]Medkit []Healing Turret"
+description: "Can repair buildings via curing ammo, more likely to be targeted by enemies."
+health: 800
+size: 2
+recoil: 0.5
+shootY: 6
+reload: 9
+range: 360
+smokeEffect: steamCoolSmoke
+shootEffect: shootSmallColor
+priority: 4
+inaccuracy: 0.25
+rotateSpeed: 5
+targetGround: true
+targetAir: true
+targetHealing: true
+shoot: {
+type: shootAlternate
+spread: 5
+    }
+recoils: 2
+liquidCapacity: 100
+consumes: {
+  coolant: {
+    amount: 0.1
+  }
+}
+coolantMultiplier: 2.5
+drawer: {
+type: DrawTurret
+basePrefix: reinforced-
+parts: [
+{
+type: RegionPart
+suffix: "-barrel2"
+progress: recoil
+heatProgress: recoil
+mirror: false
+under: true
+recoilIndex: 1
+moveY: -0.6
+moveRot: -0
+}
+{
+type: RegionPart
+suffix: "-barrel1"
+progress: recoil
+heatProgress: recoil
+mirror: false
+under: true
+recoilIndex: 0
+moveY: -0.6
+moveRot: 0
+}
+]
+}
+ammoTypes: {
+  medkit-token: {
+    type: BasicBulletType
+    damage: 30
+    speed: 9
+    width: 7
+    height: 9
+    lifetime: 40
+    ammoMultiplier: 1
+    lifesteal: 10
+    backColor: 26A78E
+    frontColor: 2cbfa2
+    shootSound: shootSegment
+   collidesTeam: true
+  healPercent: 3
+  }
+}
+ 
+researchCost: [
+  blackrock-token/120
+  medkit-token/120
+]
+category: turret
+research: blackrock-turret
+requirements: [
+  blackrock-token/60
+  medkit-token/60
+]

@@ -1,0 +1,39 @@
+type: TractorBeamTurret
+name: '''
+[#8378DF]Grav []Hijacker
+'''
+description: '''
+Low-ranged parralax-esque turret, hijacks units, making them unable to move or shoot.
+'''
+  size: 2
+  force: 50
+  targetAir: true
+  targetGround: true
+  unitSort: strongest
+  scaledForce: 50
+  health: 600
+  range: 200
+  damage: 1
+  rotateSpeed: 15
+  consumes: {
+  items: [
+    grav-token/5
+  ]
+}
+itemCapacity: 5
+retargetTime: 0.5
+squareSprite: false
+  status: gravs-disablementing-hijack
+  statusDuration: 60
+  requirements: [
+      blackrock-token/100
+      grav-token/100
+  ]
+  category: turret
+  research: {
+    parent: blackrock-turret
+    requirements: [
+      blackrock-token/200
+      grav-token/200
+]
+}
