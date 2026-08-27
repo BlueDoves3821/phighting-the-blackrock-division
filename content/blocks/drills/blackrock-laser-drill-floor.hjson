@@ -1,0 +1,27 @@
+type: Drill
+
+name: "Blackrock Laser Drill (Floor)"
+description: "Mines ores from floors, nothing much to say about it."
+requirements: [
+  blackrock-token/30
+]
+drillTime: 20
+ambientSound: loopMineBeam
+health: 500
+tier: 15
+hardnessDrillMultiplier: 1
+size: 2
+rotateSpeed: 5
+warmupSpeed: 5
+itemCapacity: 200
+hasLiquids: false
+drillEffect: mineSmall
+updateEffect: pulverizeSmall
+updateEffectChance: 0.06
+  research: {
+    parent: blackrock-token-factory
+    requirements: [
+    blackrock-token/60
+]
+}
+category: production
