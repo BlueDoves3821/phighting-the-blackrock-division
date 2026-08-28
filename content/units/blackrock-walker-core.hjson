@@ -1,9 +1,9 @@
   template: ErekirUnitType
   name: '''
-Blackrock Walker
+Blackrock Walker (Core Unit)
 '''
   description: '''
-Heavy-duty ground unit, rapidly fires a laser that pierces armor.
+Core unit of the blackrock core, fires a stronger laser that pierces armor, not affected by liquid pools.
 '''
   envDisabled: 0
   hidden: false
@@ -15,7 +15,7 @@ Heavy-duty ground unit, rapidly fires a laser that pierces armor.
   legSpeed: 0.5
   legExtension: -5
   legMoveSpace: 0.95
-  legSplashDamage: 25
+  legSplashDamage: 40
   legSplashRange: 10
   rotateSpeed: 3
   speed: 1.2
@@ -23,18 +23,19 @@ Heavy-duty ground unit, rapidly fires a laser that pierces armor.
   drag: 0.4
   faceTarget: true
   flying: false
-  health: 8000
-  armor: 8
+  health: 10000
+  armor: 10
   hitSize: 20
   lowAltitude: true
+  hovering: true
   mineRange: 2500
   mineFloor: true
-  mineSpeed: 60
+  mineSpeed: 65
   mineTier: 250
   mineWalls: true
   itemCapacity: 1000
   buildRange: 2500
-  buildSpeed: 60
+  buildSpeed: 65
   mineBeamOffset: 10
   stepSound: walkerStepSmall
   stepSoundPitch: 1
@@ -43,8 +44,8 @@ abilities:[
   type:ShieldArcAbility
   y: 0
   radius: 35
-  max: 5000
-  regen: 5
+  max: 6000
+  regen: 6
   cooldown: 640
   width: 3
   angle: 365
@@ -57,20 +58,20 @@ weapons: [
     {
         rotate: false
         mirror: true
-        name: bw-laser
+        name: bwc-laser
         y: 4.4
         x: 5.6
-        reload: 3
+        reload: 10
         recoil: 0
         shootSound: shootLaser
         layerOffset: -1
         
     bullet: {
   type: LaserBulletType
-    damage: 250
-    sideLength: 5
+    damage: 650
+    sideLength: 15
     sideWidth: 0
-    lifetime: 18
+    lifetime: 24
     length: 400
     pierce: true
     pierceArmor: true
@@ -83,9 +84,4 @@ weapons: [
 }
 }
 ]
-research: {
-    parent: blackrock-unit-assembly
-    requirements: [
-blackrock-token/150
-]
-}
+alwaysUnlocked: true
