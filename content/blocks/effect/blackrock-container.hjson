@@ -1,0 +1,21 @@
+name: '''
+Blackrock Container
+'''
+description: '''
+A decently sized storage container, place it next to a core to increase it's space.
+'''
+type: StorageBlock
+itemCapacity: 1500
+size: 2
+category: effect
+squareSprite: false
+health: 750
+	requirements: [
+	blackrock-token/30
+	]
+  research: {
+    parent: blackrock-token-factory
+    requirements: [
+      blackrock-token/60
+]
+}
