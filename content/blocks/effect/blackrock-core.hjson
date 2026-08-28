@@ -5,12 +5,12 @@ Blackrock []Core
 description: '''
 An armored blackrock core, larger storage space.
 '''
-health: 5200
-armor: 5
+health: 7200
+armor: 10
 itemCapacity: 15000
 size: 3
 category: effect
-unitType: blackrock-walker
+unitType: blackrock-walker-core
 unitCapModifier: 25
 requirements: [
   blackrock-token/850
