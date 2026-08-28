@@ -1,0 +1,41 @@
+name: "[#B480FF]Beta Biograft []Overdrive Projector"
+description: '''
+A fast middle-ranged overdriver, quadruples the speed of everything, can optionally take [#B480FF]beta biograft []tokens for 10x speed.
+'''
+details: '''
+Disclaimer: overdriver may cause issues when boosted, boost with caution.
+'''
+type: OverdriveProjector
+category: effect
+hasBoost: true
+hasPower: false
+hasItems: true
+size: 2
+speedBoost: 5
+speedBoostPhase: 6
+rangeBoostPhase: 0
+range: 250
+health: 450
+itemCapacity: 20
+baseColor: B480FF
+phaseColor: B480FF
+consumes: {
+        items: {
+        items: [
+        biograft-token-beta/5
+        ]
+        booster: true
+        optional: true
+        }
+    }
+researchCost: [
+  blackrock-token/140
+  biograft-token-beta/140
+  subspace-token/80
+]
+research: biograft-token-beta-exchanger
+requirements: [
+  blackrock-token/70
+  biograft-token-beta/70
+  subspace-token/40
+]

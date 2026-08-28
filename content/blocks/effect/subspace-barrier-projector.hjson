@@ -1,0 +1,28 @@
+    type: BaseShield
+    name: '''
+[#FF0066]Subspace []Barrier Projector
+    '''
+    description: '''
+Much like the force projector counterpart, but disallows enemies from entering the shieded area.
+'''
+	rebuildable: true
+ squareSprite: false
+ size: 3
+	sides: 360
+	radius: 200
+ health: 1200
+consumes: {
+	power: 3.3334
+}
+requirements: [
+    blackrock-token/750
+    subspace-token/750
+]
+research: {
+    parent: subspace-force-projector
+    requirements: [
+    blackrock-token/1500
+    subspace-token/1500
+    ]
+}
+category: effect

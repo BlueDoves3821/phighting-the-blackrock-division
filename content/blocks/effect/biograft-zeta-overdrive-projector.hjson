@@ -1,0 +1,41 @@
+name: "[#FF6A00]Zeta Biograft []Overdrive Projector"
+description: '''
+An extremely fast but low ranged overdriver, quadruples the speed of everything, can optionally take [#FF6A00]zeta biograft []tokens for 20x speed.
+'''
+details: '''
+Disclaimer: overdriver may cause issues when boosted, boost with caution.
+'''
+type: OverdriveProjector
+category: effect
+hasBoost: true
+hasPower: false
+hasItems: true
+size: 2
+speedBoost: 5
+speedBoostPhase: 16
+rangeBoostPhase: 0
+range: 80
+health: 350
+itemCapacity: 20
+baseColor: FF6A00
+phaseColor: FFA600
+consumes: {
+        items: {
+        items: [
+        biograft-token-zeta/5
+        ]
+        booster: true
+        optional: true
+        }
+    }
+researchCost: [
+  blackrock-token/130
+  biograft-token-zeta/130
+  subspace-token/70
+]
+research: biograft-token-zeta-exchanger
+requirements: [
+  blackrock-token/65
+  biograft-token-zeta/65
+  subspace-token/35
+]
