@@ -16,7 +16,7 @@ speedBoostPhase: 16
 rangeBoostPhase: 0
 range: 80
 health: 350
-itemCapacity: 5
+itemCapacity: 20
 baseColor: FF6A00
 phaseColor: FFA600
 consumes: {
