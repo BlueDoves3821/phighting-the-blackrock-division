@@ -91,6 +91,7 @@ description: "A standard-issue turret. does great against typical units, but fal
     hyperlaser-token: {
     type: LaserBulletType
     ammoMultiplier: 10
+    ammoPerShot: 10
     reloadMultiplier: 0.1
     damage: 450
     inaccuracy: 0

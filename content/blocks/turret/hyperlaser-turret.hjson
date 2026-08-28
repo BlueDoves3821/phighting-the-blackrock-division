@@ -12,6 +12,7 @@ description: "Long ranged laser turret, applies powershot onto units.",
     rotateSpeed: 3
     range: 540
     maxAmmo: 50
+    ammoPerShot: 5
     shoot: {
     firstShotDelay: 32
     }
@@ -33,7 +34,7 @@ description: "Long ranged laser turret, applies powershot onto units.",
     ammoTypes: {
     hyperlaser-token: {
     type: LaserBulletType
-    ammoMultiplier: 10
+    ammoMultiplier: 5
     damage: 950
     inaccuracy: 0
     width: 15

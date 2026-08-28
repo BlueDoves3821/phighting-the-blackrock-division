@@ -1,0 +1,227 @@
+type: ItemTurret
+name: "[#2B90B4]Hyperlaser []Eviscerating Turret",
+description: "Instantly kills enemies caught in the laser whilst causing collateral damage to anything it hits, has a 20 second cooldown after firing, does not target air units & structures to avoid wasting unnecessary shots, cannot be overdriven.",
+    targetAir: false
+    targetBlocks: false
+    targetGround: true
+    canOverdrive: false
+    health: 2000
+    size: 4
+    reload: 1200
+    squareSprite: false
+    unitSort: strongest
+    fogRadiusMultiplier: 0.5
+    rotateSpeed: 0.5
+    range: 7500
+    maxAmmo: 60
+    cooldownTime: 120
+    shake: 20
+    smokeEffect: smoke
+    ammoPerShot: 20
+    shoot: {
+    firstShotDelay: 85
+    }
+    soundPitchMin: 1
+    soundPitchMax: 1
+    chargeSound: hyperlaser-ult-charge
+    drawer: {
+    type: DrawTurret
+    basePrefix: reinforced-
+    parts: [
+    {
+    suffix: "-barrel"
+    progress: recoil
+    under: true
+    moveY: -6
+    }
+    {
+    suffix: "-cooldown"
+    progress: reload
+    color: 36B6E4FF
+    colorTo: 216E8A00
+    top: true
+    outline: false
+    y: 0
+    }
+    ]
+    }
+    ammoTypes: {
+    hyperlaser-token: {
+    type: LaserBulletType
+    ammoMultiplier: 20
+    damage: 1e+09
+    inaccuracy: 0
+    width: 40
+    sideLength: 25
+    sideWidth: 1.1
+    lifetime: 80
+    length: 7500
+    pierceArmor: true
+    pierce: true
+    pierceCap: 200
+    absorbable: false
+    laserAbsorb: false
+    inaccuracy: 0
+    shootCone: 0.25
+    splashDamageRadius: 80
+    splashDamage: 10000
+    splashDamagePierce: true
+    shootSound: hyperlaser-ult-shoot
+    status: hyperlasers-powershot
+    statusDuration: 2400
+    hitSound: blockExplodeElectricBig
+    colors: [
+      216E8A,
+      267E9D,
+      2B90B4,
+      ffffff
+    ]
+    shootEffect: [
+      {
+        length: 250
+        cone: 10
+        lifetime: 80
+        particles: 15
+        colorFrom: 2B90B4c8
+        colorTo: 216E8A00
+        sizeFrom: 16
+        sizeTo: 0
+      }
+      {
+        length: 200
+        cone: 15
+        lifetime: 80
+        particles: 12
+        colorFrom: 2B90B4c8
+        colorTo: 216E8A00
+        sizeFrom: 6
+        sizeTo: 1
+      }
+      {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 60
+        strokeFrom: 3
+        strokeTo: 1
+        interp: sineOut
+        lifetime: 20
+        colorFrom: 2B90B4c8
+        colorTo: 216E8A00
+       }
+    ]
+    chargeEffect: [
+    {
+        type: WaveEffect
+        sizeFrom: 60
+        sizeTo: 0
+        strokeFrom: 0
+        strokeTo: 3
+        interp: circleOut
+        lifetime: 85
+        colorFrom: 216E8A00
+        colorTo: 2B90B4c8
+     }
+      {
+        length: -200
+        baseLength: 200
+        lifetime: 85
+        particles: 10
+        colorFrom: 216E8A00
+        colorTo: 2B90B4c8
+        sizeFrom: 12
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: linear
+      }
+      {
+        length: -250
+        baseLength: 250
+        lifetime: 70
+        particles: 8
+        colorFrom: 216E8A00
+        colorTo: 2B90B4C8
+        sizeFrom: 7
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: linear
+      }
+      {
+        length: -200
+        baseLength: 200
+        lifetime: 65
+        particles: 7
+        colorFrom: 216E8A00
+        colorTo: 2B90B4c8
+        sizeFrom: 5
+        sizeTo: 0
+        interp: pow3Out
+        sizeInterp: linear
+      }
+     ]
+    hitEffect: [
+      {
+        line: true
+        length: 60
+        lifetime: 15
+        particles: 10
+        colorFrom: 2B90B4FF
+        colorTo: 216E8A00
+        lenFrom: 2
+        lenTo: 0
+        strokeFrom: 1
+        strokeTo: 0
+      }
+                {
+            type: ExplosionEffect
+            smokeColor: 5B5B5B80
+            smokeRad: 90
+            smokes: 48
+            smokeSize: 3
+            smokeSizeBase: 0
+            sparkColor: 2B90B480
+            sparkLen: 12
+            sparkRad: 90
+            sparks: 50
+            sparkStroke: 4
+            waveColor: 36B6E4
+            waveLife: 240
+            waveRad: 110
+            lifetime: 240
+        }
+      {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 85
+        strokeFrom: 3
+        strokeTo: 1
+        interp: circleOut
+        lifetime: 40
+        colorFrom: 36B6E4c8
+        colorTo: 216E8A00
+       }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 0
+            sizeTo: 150
+            interp: sineOut
+            sizeInterp: exp5Out
+            colorFrom: 36B6E4C8
+            colorTo: 216E8A00
+            lifetime: 60
+            region: circle-shadow
+            particles: 1
+        }
+    ]
+  }
+    }
+researchCost: [
+  blackrock-token/2000
+  hyperlaser-token/2000
+]
+category: turret
+research: hyperlaser-turret
+requirements: [
+  blackrock-token/1000
+  hyperlaser-token/1000
+]
