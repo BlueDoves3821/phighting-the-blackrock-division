@@ -11,14 +11,16 @@ It's [#FF0066]subspace's []phinisher!
   type: flying
   rotateSpeed: 0
   speed: 0
-  accel: 0
-  drag: 0
+  accel: -5
+  drag: 1e+08
   health: 281224
   hitSize: 1
   targetable: false
   hittable: false
   lowAltitude: true
   hovering: true
+  useUnitCap: false
+  bounded: false
   drawCell: false
   drawSoftShadow: false
   createScorch: false
@@ -41,6 +43,8 @@ weapons: [
         shootSound: noxious-void-explosion
         soundPitchMin: 1
         soundPitchMax: 1
+        shootStatus: unmoving
+        shootStatusDuration: 400
         bullet: {
         killShooter: true
         type: MissileBulletType
