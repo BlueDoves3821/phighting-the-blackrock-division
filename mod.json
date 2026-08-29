@@ -15,7 +15,7 @@ Exchange the tokens, construct structures & units, take down the enemy, at the e
 [grey[]]Blackrock Shall Prevail.
 '''
   "subtitle": "Blackrock shall prevail.",
-  "minGameVersion": "136.1",
+  "minGameVersion": "137",
   "version": "Alpha 0.15"
   "hideBrowser": "false"
 }
