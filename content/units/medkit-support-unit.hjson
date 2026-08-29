@@ -149,6 +149,25 @@ weapons: [
     healPercent: 8
     }
 } 
+   {
+  name: medkit-support-unit-repairing-beam
+  type: RepairBeamWeapon
+  x: 0
+  y: -4
+  top: false
+  mirror: false
+  rotate: true
+  rotateSpeed: 1.25
+  shootY: 0.5
+  beamWidth: 0.25
+  repairSpeed: 2
+  laserColor: 2CBFA2
+  healColor: 2CBFA2
+  bullet: {
+  type: BulletType
+  maxRange: 150
+  }
+}
  ]
   research: {
     parent: blackrock-unit-assembly
