@@ -58,7 +58,7 @@ description: "Instantly kills enemies caught in the laser whilst causing collate
     length: 7500
     pierceArmor: true
     pierce: true
-    pierceCap: 200
+    pierceCap: 1000
     absorbable: false
     laserAbsorb: false
     inaccuracy: 0
