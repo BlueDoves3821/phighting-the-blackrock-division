@@ -3,7 +3,7 @@ name: '''
 [#8378DF]Grav []Hijacker
 '''
 description: '''
-Low-ranged parralax-esque turret, hijacks units, making them unable to move or shoot.
+Low-ranged parallax-esque turret, hijacks units, making them unable to move or shoot.
 '''
   size: 2
   force: 50
