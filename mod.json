@@ -1,8 +1,8 @@
 {
-  "displayName": "PHIGHTING! THE BLACKROCK DIVISION",
-  "name": "phighting-blackrock",
-  "author": "BlueDoves3821",
-  "description": '''
+"displayName": "PHIGHTING! THE BLACKROCK DIVISION",
+"name": "phighting-blackrock",
+"author": "BlueDoves3821",
+"description": '''
 [#ffffff[]]Note: this mod won't be worked on as much, updates will be slow, sorry about that!
 
 [#FF0066[]]Technology is the future!
@@ -14,8 +14,9 @@ Exchange the tokens, construct structures & units, take down the enemy, at the e
 
 [grey[]]Blackrock Shall Prevail.
 '''
-  "subtitle": "Blackrock shall prevail.",
-  "minGameVersion": "137",
-  "version": "Alpha 0.15"
-  "hideBrowser": "false"
+"subtitle": "Blackrock shall prevail.",
+"minGameVersion": "137",
+"version": "Alpha 0.15",
+"hideBrowser": "false",
+"hidden": "false",
 }
