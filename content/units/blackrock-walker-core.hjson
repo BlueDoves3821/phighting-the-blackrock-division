@@ -68,7 +68,7 @@ weapons: [
         
     bullet: {
   type: LaserBulletType
-    damage: 650
+    damage: 1200
     sideLength: 15
     sideWidth: 0
     lifetime: 24
