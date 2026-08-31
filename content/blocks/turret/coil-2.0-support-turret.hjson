@@ -1,0 +1,193 @@
+type: ItemTurret
+name: "[#A31B1D]Coil 2.0 []Support Turret",
+description: "Fires a laser beam that stops units whilst disarming other units in a radius, will also heal ally structures.",
+    targetAir: true
+    targetGround: true
+    targetHealing: true
+    health: 1100
+    size: 3
+    reload: 60
+    squareSprite: false
+    unitSort: mostShield
+    fogRadiusMultiplier: 0.5
+    rotateSpeed: 7
+    range: 300
+    maxAmmo: 30
+    ammoPerShot: 3
+    shootY: 5.8
+    moveWhileCharging: false
+    shoot: {
+    firstShotDelay: 45
+    }
+    soundPitchMin: 1
+    soundPitchMax: 1
+    chargeSound: coil-2.0-charge
+    drawer: {
+    type: DrawTurret
+    basePrefix: reinforced-
+    parts: [
+{
+suffix: "-charge"
+progress: charge
+color: 7D151600
+colorTo: CE2225C8
+outline: false
+}
+    ]
+    }
+  ammoTypes: {
+  coil-2.0-token: {
+  type: LaserBulletType
+  damage: 300
+  drawSize: 200
+  lightRadius: 20
+  lightningType: damageLightning
+  range: 100
+  length: 300
+  width: 15
+  sideAngle: 35
+  pierceArmor: true
+  pierce: true
+  pierceCap: 7
+  inaccuracy: 0
+  shootCone: 2
+  shootSound: coil-2.0-impact
+  knockback: 20
+  status: unmoving
+  statusDuration: 1200
+  collidesTeam: true
+  healPercent: 7.25
+  bulletInterval: 50
+  intervalBullets: 1
+  intervalBullet: {
+  type: MissileBulletType
+  splashDamageRadius: 300
+  splashDamage: 40
+  splashDamagePierce: true
+  width: 0.05
+  height: 0.05
+  speed: 0
+  lifetime: 0
+  damage: 0
+  instantDisappear: true
+  knockback: 5
+  collides: false
+  status: disarmed
+  statusDuration: 600
+  despawnEffect: none
+  trailEffect: none
+  collidesTeam: true
+  healPercent: 2.5
+  }
+  colors: [
+      7D1516,
+      8F1819,
+      A31B1D,
+      CE2225,
+      ffffff
+    ]
+    shootEffect: [
+      {
+        length: 150
+        cone: 10
+        lifetime: 60
+        particles: 15
+        colorFrom: CE2225c8
+        colorTo: 7D151600
+        sizeFrom: 5
+        sizeTo: 0
+      }
+      {
+        length: 180
+        cone: 15
+        lifetime: 60
+        particles: 12
+        colorFrom: CE2225c8
+        colorTo: 7D151600
+        sizeFrom: 3
+        sizeTo: 1
+      }
+      {
+       type: WaveEffect
+        sizeFrom: 300
+        sizeTo: 400
+        strokeFrom: 3
+        strokeTo: 1
+        interp: sineOut
+        lifetime: 80
+        colorFrom: CE2225C8
+        colorTo: 7D151600
+       }
+       {
+       type: ParticleEffect
+       length: 0
+       sizeFrom: 300
+       sizeTo: 300
+       interp: sineOut
+       colorFrom: CE2225C8
+       colorTo: 7D151600
+       lifetime: 80
+       particles: 1
+       }
+    ]
+    chargeEffect: [
+    {
+        type: WaveEffect
+        sizeFrom: 60
+        sizeTo: 0
+        strokeFrom: 0
+        strokeTo: 3
+        interp: sineOut
+        lifetime: 45
+        colorFrom: 7D151600
+        colorTo: CE2225C8
+     }
+    {
+        type: WaveEffect
+        sizeFrom: 300
+        sizeTo: 300
+        strokeFrom: 3
+        strokeTo: 3
+        interp: exp5Out
+        lifetime: 45
+        colorFrom: 7D151600
+        colorTo: CE2225C8
+     }
+       {
+       type: ParticleEffect
+       length: 0
+       sizeFrom: 300
+       sizeTo: 300
+       interp: exp5In
+       colorFrom: 7D151600
+       colorTo: CE2225C8
+       lifetime: 45
+       particles: 1
+       }
+     ]
+    hitEffect: [
+      {
+        line: true
+        length: 60
+        lifetime: 15
+        particles: 10
+        colorFrom: A31B1DFF
+        colorTo: 7D151600
+        lenFrom: 2
+        lenTo: 0
+        strokeFrom: 1
+        strokeTo: 0
+      }
+    ]
+  }
+    },
+researchCost: [
+  blackrock-token/320
+  coil-2.0-token/320
+]
+category: turret
+research: coil-2.0-bullet-breaker
+requirements: [
+  blackrock-token/160
+  coil-2.0-token/160
+]
