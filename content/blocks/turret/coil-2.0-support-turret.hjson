@@ -54,7 +54,7 @@ outline: false
   shootSound: coil-2.0-impact
   knockback: 20
   status: unmoving
-  statusDuration: 1200
+  statusDuration: 300
   collidesTeam: true
   healPercent: 7.25
   bulletInterval: 50

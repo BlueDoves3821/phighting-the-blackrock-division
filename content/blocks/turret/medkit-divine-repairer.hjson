@@ -1,0 +1,187 @@
+type: ItemTurret
+name: "[#2CBFA2]Medkit []Divine Repairer"
+description: '''
+repairs ally structures to 50% of it's max health in a radius, while it cannot target units, it does apply slow status.
+'''
+size: 3
+health: 110
+squareSprite: false
+targetAir: false
+targetGround: false
+targetHealing: true
+range: 320
+maxAmmo: 10
+reload: 240
+priority: 10
+inaccuracy: 0
+shootCone: 360
+rotateSpeed: 0
+soundPitchMin: 1
+soundPitchMax: 1
+loopSound: none
+chargeSound: medkit-dr-charge
+shootY: 0
+recoil: 0
+shoot: {
+
+firstShotDelay: 120
+}
+drawer: {
+    type: DrawTurret
+    basePrefix: reinforced-
+    parts: [
+    {
+    suffix: "-cooldown"
+    progress: reload
+    color: 2CBFA2FF
+    colorTo: 22927C00
+    top: true
+    outline: false
+    y: 0
+    }
+    ]
+}
+ ammoTypes: {
+    medkit-token: {
+        type: MissileBulletType
+        splashDamageRadius: 320
+        splashDamage: 1
+        splashDamagePierce: true
+        width: 0.05
+        height: 0.05
+        speed: 0
+        lifetime: 0
+        damage: 0
+        instantDisappear: true
+        collides: false
+        collidesTeam: true
+        healPercent: 50
+        status: slow
+        statusDuration: 2400
+        despawnEffect: none
+        trailEffect: none
+        shootSound: medkit-dr-heal
+        shootEffect: {
+            type: MultiEffect
+                effects: [
+        {
+            type: WaveEffect
+            sizeFrom: 320
+            sizeTo: 400
+            strokeFrom: 6
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 240
+            colorFrom: 2CBFA2FF
+            colorTo: 22927C00
+        }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 320
+            sizeTo: 320
+            interp: exp5Out
+            colorFrom: 2CBFA250
+            colorTo: 22927C00
+            lifetime: 240
+            particles: 1
+        }
+{
+    type: ParticleEffect
+    baseLength: 0
+    length: 320
+    particles: 80
+    colorFrom: 2CBFA2c8
+    colorTo: 2CBFA200
+    sizeFrom: 17
+    sizeTo: 17
+    sizeInterp: pow5Out
+    colorInterp: exp5In
+    spin: 15
+    region: large-bomb
+    strokeFrom: 2
+    strokeTo: 2
+    lifetime: 180
+}
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 0
+            sizeTo: 300
+            sizeInterp: pow5Out
+            colorInterp: circleOut
+            region: impact-reactor-plasma-1
+            spin: 9
+            colorFrom: 2CBFA250
+            colorTo: 22927C00
+            lifetime: 135
+            particles: 1
+        }
+        {
+            type: ParticleEffect
+            length: 0
+            sizeFrom: 0
+            sizeTo: 210
+            sizeInterp: pow5Out
+            colorInterp: circleOut
+            region: impact-reactor-plasma-2
+            spin: 5
+            colorFrom: 2CBFA250
+            colorTo: 22927C00
+            lifetime: 100
+            particles: 1
+        }
+                ]
+            }
+chargeEffect: {
+type: MultiEffect
+    effects: [
+    {
+    type: WaveEffect
+    lifetime: 120
+    sizeFrom: 320
+    sizeTo: 320
+    interp: circleOut
+    strokeFrom: 0
+    strokeTo: 4
+    colorFrom: 22927C00
+    colorTo: 2CBFA2FF
+}
+    {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 0
+    sizeTo: 320
+    length: 0
+    lifetime: 120
+    interp: circleOut
+    colorFrom: 22927C00
+    colorTo: 2CBFA250
+    }
+    {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 2.5
+    sizeTo: 50
+    length: 0
+    region: large-bomb-back
+    spin: 2
+    lifetime: 120
+    interp: slope
+    colorFrom: 2CBFA2FF
+    colorTo: 2CBFA2FF
+    }
+]
+}
+     }
+   }
+researchCost: [
+  blackrock-token/600
+  medkit-token/600
+]
+category: turret
+research: medkit-healing-turret
+requirements: [
+  blackrock-token/300
+  medkit-token/300
+]
