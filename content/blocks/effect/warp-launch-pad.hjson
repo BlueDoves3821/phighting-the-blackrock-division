@@ -12,7 +12,8 @@ size: 3
 launchTime: 60
 lightStep: 0
 lightSteps: 1
-lightColor: A82D2F
+bottomColor: 4A4B5300
+lightColor: A82D2FFF
 researchCost: [
   blackrock-token/120
   warp-token/120
