@@ -1,0 +1,28 @@
+type: LightBlock
+name: '''
+Blackrock Lamp
+'''
+description: '''
+A bright lamp, uses internal batteries to power it, can be connected to powerlines.
+'''
+details: '''
+Thanks to KORBLOX technology, this lamp seems to "blend" in with the environment, enemies can't find it as easily.
+'''
+consumesPower: false
+conductivePower: true
+health: 200
+size: 1
+category: effect
+brightness: 5
+radius: 150
+priority: -1
+targetable: false
+requirements: [
+blackrock-token/20
+]
+research: {
+    parent: blackrock-token-factory
+    requirements: [
+blackrock-token/40
+]
+}
