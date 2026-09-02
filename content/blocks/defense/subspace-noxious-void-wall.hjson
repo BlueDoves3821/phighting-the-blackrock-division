@@ -1,0 +1,31 @@
+name: "[#FF0066]Subspace []Noxious Void Wall"
+type: ShieldWall
+description: '''
+Can use power to deploy it's shield, when destroyed, it spawns a noxious void.
+'''
+health: 2000
+size: 2
+armor: 5
+hasPower: true
+conductivePower: true
+shieldHealth: 1000
+shieldColor: FF0066
+glowColor: FF00667F
+destroyBullet: {
+instantDisappear: true
+spawnUnit: noxious-void
+}
+destroyBulletSameTeam: true
+  requirements: [
+     blackrock-token/50
+     subspace-token/50
+  ]
+  research: subspace-token-exchanger
+  category: defense
+  consumes: {
+  power: 0.333333333
+}
+  researchCost: [
+  blackrock-token/100
+  subspace-token/100
+]
