@@ -1,0 +1,33 @@
+type: HeatProducer
+  name: "Blackrock Heater"
+  description: "Uses power to apply heat to structures that require heat, useful in tight spaces."
+  size: 1
+  health: 200
+  drawer: {
+  type: DrawMulti
+  drawers: [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawHeatOutput
+      }
+    ]
+  }
+  consumes: {
+  power: 1.333333333
+}
+  warmupRate: 2
+  rotateDraw: false
+  heatOutput: 15
+  regionRotated1: 1
+  category: crafting
+ 	requirements: [
+		blackrock-token/20
+	]
+  research: {
+    parent: blackrock-token-factory
+    requirements: [
+      blackrock-token/40
+]
+}
