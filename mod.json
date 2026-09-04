@@ -1,6 +1,6 @@
 {
 "displayName": "PHIGHTING! THE BLACKROCK DIVISION",
-"name": "phighting-blackrock",
+"name": "phighting-the-blackrock-division",
 "author": "BlueDoves3821",
 "description": '''
 [#ffffff[]]Note: this mod won't be worked on as much, updates will be slow, sorry about that!
@@ -16,7 +16,7 @@ Exchange the tokens, construct structures & units, take down the enemy, at the e
 '''
 "subtitle": "Blackrock shall prevail.",
 "minGameVersion": "137",
-"version": "Alpha 0.15",
+"version": "Alpha 0.2",
 "hideBrowser": "false",
 "hidden": "false",
 }
