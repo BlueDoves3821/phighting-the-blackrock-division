@@ -3,7 +3,7 @@
 </p>
 
 # DISCLAIMER!
-This mod will be worked on alot less than [PHIGHTING! SWORD DEITIES.](https://github.com/BlueDoves3821/sword-deities-mod)
+This mod will be worked on alot less than [PHIGHTING! SWORD DEITIES.](https://github.com/BlueDoves3821/phighting-sword-deities)
 
 updates to this mod will be really slow, sorry about that!
 ## Mod Information
