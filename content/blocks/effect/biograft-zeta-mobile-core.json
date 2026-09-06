@@ -2,7 +2,7 @@
   "name": "[#FF6A00]Zeta Biograft []Mobile Core",
   "description": "A core designed for mobile bases, can be upgraded to any core that's larger than 2x2, fragile if left unprotected, explodes when destroyed.
 [red]disclaimer: avoid deconstructing this core if it's the only core in the sector!",
-  "details": "upgrading a mobile core is permanent, it cannot be dscontructed.",
+  "details": "upgrading a mobile core is permanent, it cannot be deconstructed.",
   "size": 2,
   "health": 1200,
   "itemCapacity": 8500,
