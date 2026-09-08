@@ -1,0 +1,26 @@
+type: Battery
+name: "Blackrock Battery"
+description: '''
+Holds power until it's needed during times of power deficit.
+'''
+    size: 1
+    health: 200
+    emitLight: true
+    hasPower: true
+    baseExplosiveness: 10
+    insulated: false
+    fullLightColor: FFFFFF
+    emptyLightColor: 272727
+    consumes: {
+        powerBuffered: 5000
+    }
+	requirements: [
+  blackrock-token/10
+	]
+	category: power
+  research: {
+    parent: blackrock-beam-node
+    requirements: [
+      blackrock-token/20
+]
+}
