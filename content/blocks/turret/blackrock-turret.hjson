@@ -376,7 +376,7 @@ grav-token: {
     ]
  smokeEffect: shootSmokeTitan
 	hitEffect: hitLancer
- ammoMultiplier: 20
+ ammoMultiplier: 15
 	pierce: true
  	pierceCap: 35
   }
