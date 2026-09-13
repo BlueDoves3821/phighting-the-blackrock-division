@@ -1,26 +1,26 @@
 type: ItemTurret
-name: "Blackrock Turret",
-description: "A standard-issue turret. does great against typical units, can take multiple types of tokens as ammo.",
+name: "Upgraded Blackrock Turret",
+description: "An upgraded turret, fires projectiles at a much fast velocities, more damage, but longer cooldown, takes multiple types of tokens as ammo.",
     targetAir: true
     targetGround: true
-    health: 1150
-    size: 2
-    reload: 4
+    health: 2100
+    size: 3
+    reload: 12
     xRand: 0
     squareSprite: false
     unitSort: weakest
     coolantMultiplier: 4
     fogRadiusMultiplier: 0.5
-    liquidCapacity: 100
+    liquidCapacity: 200
     consumes: {
     coolant: {
-      amount: 0.2
+      amount: 0.25
     }
   }
-    rotateSpeed: 4
+    rotateSpeed: 3
     shots: 1
-    range: 190
-    maxAmmo: 80
+    range: 380
+    maxAmmo: 100
     drawer: {
     type: DrawTurret
     basePrefix: reinforced-
@@ -43,9 +43,9 @@ description: "A standard-issue turret. does great against typical units, can tak
     trailWidth: 2.5
     trailLength: 5
     trailColor: 3C3837ff
-    speed: 3
+    speed: 6
    	lifetime: 60
-    damage: 150
+    damage: 250
     inaccuracy: 5
     shootCone: 8
     burstSpacing: 4
@@ -70,9 +70,9 @@ description: "A standard-issue turret. does great against typical units, can tak
     height: 8
     rangeChange: 80
     reloadMultiplier: 0.65
-    speed: 3
+    speed: 5
 	   lifetime: 85
-    damage: 90
+    damage: 130
     inaccuracy: 5
     shootCone: 10
     burstSpacing: 4
@@ -93,13 +93,13 @@ description: "A standard-issue turret. does great against typical units, can tak
     ammoMultiplier: 10
     ammoPerShot: 10
     reloadMultiplier: 0.1
-    damage: 450
+    damage: 700
     inaccuracy: 0
-    width: 10
-    sideLength: 5
-    sideWidth: 1
+    width: 20
+    sideLength: 10
+    sideWidth: 2
     lifetime: 30
-    length: 180
+    length: 320
     pierceArmor: true
     pierce: true
     pierceCap: 20
@@ -138,7 +138,7 @@ description: "A standard-issue turret. does great against typical units, can tak
       {
        type: WaveEffect
         sizeFrom: 0
-        sizeTo: 20
+        sizeTo: 40
         strokeFrom: 3
         strokeTo: 1
         interp: sineOut
@@ -173,9 +173,9 @@ description: "A standard-issue turret. does great against typical units, can tak
     height: 8
     rangeChange: 120
     reloadMultiplier: 3
-    speed: 10
+    speed: 15
 	   lifetime: 30
-    damage: 60
+    damage: 90
     inaccuracy: 17
     shootCone: 20
     burstSpacing: 4
@@ -217,9 +217,9 @@ type: BasicBulletType
     width: 8
     height: 8
     reloadMultiplier: 2
-    speed: 5
+    speed: 8
 	   lifetime: 60
-    damage: 90
+    damage: 120
     inaccuracy: 5
     shootCone: 17
     burstSpacing: 4
@@ -259,7 +259,7 @@ grav-token: {
     width: 8
     height: 8
     reloadMultiplier: 0.3
-    speed: 15
+    speed: 28.5
 	   lifetime: 12.5
     damage: 100
     inaccuracy: 2
@@ -278,12 +278,12 @@ grav-token: {
     shrinkY: 0
 	   sprite: circle-bullet
   }
-  warp-token: {
+warp-token: {
   reloadMultiplier: 0.015
   shieldDamageMultiplier: 10
-  rangeChange: 230
+  rangeChange: 250
   type: ContinuousLaserBulletType
-  damage: 100
+  damage: 150
   damageInterval: 2.5
   speed: 0
   lifetime: 250
@@ -293,24 +293,24 @@ grav-token: {
  A82D2F,
  FFFFFF
  ]
- length: 440
+ length: 660
  fadeTime: 120
  pointyScaling: 0
- width: 3
+ width: 5
  shootSound: shootMeltdown
  status: slow
  statusDuration: 600
- intervalBullets: 1
+ intervalBullets: 2
  bulletInterval: 0.25
- intervalRandomSpread: 25
- intervalSpread: 25
+ intervalRandomSpread: 8
+ intervalSpread: 8
  intervalBullet: {
  type: BasicBulletType
-    speed: 3.5
+    speed: 7
     shieldDamageMultiplier: 5
     homingPower: 1
-    homingRange: 300
-    lifetime: 120
+    homingRange: 500
+    lifetime: 90
     frontColor: A82D2FFF
     backColor: 932729FF
     width: 4
@@ -318,7 +318,7 @@ grav-token: {
     trailWidth: 1.25
     trailLength: 2.5
     trailColor: 802224FF
-    damage: 40
+    damage: 80
     pierce: true
     collidesTiles: false
     hittable: false
@@ -331,11 +331,11 @@ grav-token: {
     type: fireBulletType
     lifetime: 5
     speed: 2
-    damage: 20
+    damage: 40
     radius: 4
     absorbable: false
     pierce: true
-    pierceCap: 3
+    pierceCap: 4
     pierceBuilding: true
     status: burning
     despawnEffect: none
@@ -365,11 +365,11 @@ grav-token: {
       {
        type: WaveEffect
         sizeFrom: 0
-        sizeTo: 80
+        sizeTo: 120
         strokeFrom: 3
         strokeTo: 3
         interp: sineOut
-        lifetime: 40
+        lifetime: 60
         colorFrom: A82D2Fc8
         colorTo: 80222400
        }
@@ -378,14 +378,14 @@ grav-token: {
 	hitEffect: hitLancer
  ammoMultiplier: 20
 	pierce: true
- 	pierceCap: 35
+ 	pierceCap: 50
   }
     },
 researchCost: [
-  blackrock-token/300
+  blackrock-token/640
 ]
 category: turret
-research: korblox-admin-tech-tree
+research: blackrock-turret
 requirements: [
-  blackrock-token/150
+  blackrock-token/320
 ]
