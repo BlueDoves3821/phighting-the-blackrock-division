@@ -15,6 +15,7 @@ rotateSpeed: 5
 targetGround: true
 targetAir: true
 targetHealing: true
+squareSprite: false
 shoot: {
 type: shootAlternate
 spread: 5

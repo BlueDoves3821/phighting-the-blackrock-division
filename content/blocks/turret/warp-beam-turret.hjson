@@ -1,0 +1,129 @@
+type: ContinuousTurret
+requirements: [
+blackrock-token/400
+warp-token/400  
+]
+name: "[#A82D2F]Warp []Beam Turret"
+description: '''
+Based on blackrock turret's [#A82D2F]warp []ammo firing mode, this turret refines it, requires power & 50 [#A82D2F]warp []tokens to operate.
+'''
+category: turret
+range: 1200
+recoil: 0
+shake: 5
+size: 4
+health: 1500
+shootCone: 5
+rotateSpeed: 2
+hasItems: true
+itemCapacity: 50
+squareSprite: false
+loopSound: beamMeltdown
+shootY: 9
+drawer: {
+    type: DrawTurret
+    basePrefix: reinforced-
+    }
+shootType: {
+ type: ContinuousLaserBulletType
+ damage: 50
+ damageInterval: 1
+ colors: [802224, 932729, A82D2F, FFFFFF]
+ length: 1200
+ width: 5
+ pointyScaling: 1
+ shootSound: shootMeltdown
+ status: slow
+ statusDuration: 1200
+ intervalBullets: 1
+ bulletInterval: 0.25
+ intervalRandomSpread: 2
+ intervalSpread: 2
+ intervalBullet: {
+ type: BasicBulletType
+    speed: 5
+    shieldDamageMultiplier: 6
+    homingPower: 1
+    homingRange: 500
+    lifetime: 240
+    frontColor: A82D2FFF
+    backColor: 932729FF
+    width: 6
+    height: 6
+    trailWidth: 3
+    trailLength: 4
+    trailColor: 802224FF
+    damage: 110
+    pierce: true
+    collidesTiles: false
+    hittable: false
+    pierceCap: 5
+    sprite: circle-bullet
+    shrinkY: 0
+    fragSpread: 10
+    fragBullets: 5
+    fragBullet: {
+    type: fireBulletType
+    lifetime: 5
+    speed: 2
+    damage: 40
+    radius: 4
+    absorbable: false
+    pierce: true
+    pierceCap: 4
+    pierceBuilding: true
+    status: burning
+    despawnEffect: none
+    }
+    }
+ shootEffect: [
+      {
+        length: 250
+        cone: 10
+        lifetime: 30
+        particles: 15
+        colorFrom: A82D2Fc8
+        colorTo: 80222400
+        sizeFrom: 8
+        sizeTo: 0
+      }
+      {
+        length: 300
+        cone: 15
+        lifetime: 60
+        particles: 12
+        colorFrom: A82D2Fc8
+        colorTo: 80222400
+        sizeFrom: 9
+        sizeTo: 4
+      }
+      {
+       type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 200
+        strokeFrom: 3
+        strokeTo: 3
+        interp: sineOut
+        lifetime: 75
+        colorFrom: A82D2Fc8
+        colorTo: 80222400
+       }
+    ]
+ smokeEffect: shootSmokeTitan
+	hitEffect: hitLancer
+	pierce: true
+ 	pierceCap: 75
+  }
+consumes: {
+power: 3.33333333
+items: [
+warp-token/50
+]
+}
+  research: {
+    parent: blackrock-turret
+    requirements: [
+      blackrock-token/800
+      warp-token/800
+]
+}
