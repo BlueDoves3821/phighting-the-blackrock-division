@@ -1,0 +1,62 @@
+type: HeatCrafter
+name: "[#8378DF]Grav []Token Melter"
+description: '''
+Requires heat to melt [#8378DF]grav []tokens to create an excellent coolant.
+'''
+size: 3
+health: 600
+consumes: {
+  items: [
+    grav-token/4
+  ]
+}
+itemCapacity: 20
+craftEffect: none
+ambientSound: loopMachine2
+craftTime: 35
+heatRequirement: 5
+hasHeat: true
+squareSprite: false
+outputLiquids: [
+   grav-coolant/5
+]
+drawer: [
+  {
+    type: DrawRegion
+    suffix: "-bottom"
+  }
+  {
+    type: DrawLiquidTile
+    drawLiquid: grav-coolant
+    padding: 4
+  }
+    {
+      type: DrawRegion
+      suffix: "-spinner"
+      spinSprite: true
+      rotateSpeed: 3
+    }
+    {
+      type: DrawRegion
+      suffix: "-top"
+    }
+{
+  type: DrawDefault
+}
+  	{
+     type : DrawHeatInput
+	 	}
+]
+liquidCapacity: 1200
+  research: {
+    parent: grav-token-exchanger
+    requirements: [
+    blackrock-token/160
+    grav-token/160
+]
+}
+category: crafting
+requirements: [
+  blackrock-token/80
+  grav-token/80
+]
