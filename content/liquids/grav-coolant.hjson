@@ -1,0 +1,10 @@
+name: "[#8378DF]Grav []Coolant"
+description: '''
+An excellent coolant made by melting down [#8378DF]grav []tokens, will hijack units who tread on the coolant.
+'''
+color: 8378DF
+viscosity: 0.85
+temperature: 0.5
+heatCapacity: 10
+research: grav-token
+effect: gravs-disablementing-hijack
