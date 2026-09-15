@@ -38,6 +38,7 @@ Heavy-duty ground unit, rapidly fires a laser that pierces armor.
   mineBeamOffset: 10
   stepSound: walkerStepSmall
   stepSoundPitch: 1
+  commands: [move, enterPayload, mine, assist, rebuild]
 abilities:[
  {
   type:ShieldArcAbility
