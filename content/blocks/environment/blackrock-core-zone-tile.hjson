@@ -1,0 +1,14 @@
+type: Floor
+name: Blackrock Core Zone Tile
+description: A placeable core zone tile, perfect for placing other cores.
+details: Once placed, it cannot be removed.
+variants: 0
+allowCorePlacement: true
+researchCost: [
+  blackrock-token/20
+]
+category: effect
+research: blackrock-token-factory
+requirements: [
+  blackrock-token/10
+]
