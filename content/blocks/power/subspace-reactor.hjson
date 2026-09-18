@@ -1,0 +1,109 @@
+type: NuclearReactor
+name: '''
+[#ff0066]Subspace []Reactor
+'''
+description: "uses [#ff0066]subspace []tokens as fuel, requires [#8378DF]grav []coolant to avoid a meltdown, good power output."
+
+requirements: [
+  blackrock-token/120
+  subspace-token/120
+]
+size: 3
+ambientSound: loopThoriumReactor
+ambientSoundVolume: 0.3
+itemDuration: 600
+itemCapacity: 40
+liquidCapacity: 300
+health: 1100
+powerProduction: 41.6666666
+heating: 0.0085
+flashThreshold: 0.5
+fuelItem: subspace-token
+research: {
+    parent: subspace-token-exchanger
+    requirements: [
+      blackrock-token/240
+      subspace-token/240
+]
+}
+category: power
+consumes: {
+  items: [
+    subspace-token/1
+  ]
+  liquids: [
+    grav-coolant/0.1
+  ]
+}
+explosionShake: 7
+explosionRadius: 60
+explosionDamage: 250
+explodeEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 0
+            sizeTo: 250
+            strokeFrom: 8
+            strokeTo: 0
+            colorFrom: FF0081FF
+            colorTo: C3004E00
+            interp: sineOut
+            lifetime: 90
+        }
+        {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 0
+            sizeTo: 600
+            strokeFrom: 8
+            strokeTo: 0
+            colorFrom: FF0081FF
+            colorTo: C3004E00
+            colorInterp: pow2In
+            sizeInterp: pow2Out
+            lifetime: 150
+        }
+        {
+            type: ParticleEffect
+            particles: 125
+            sizeFrom: 1
+            sizeTo: 8
+            line: true
+            sizeInterp: circleOut
+            colorInterp: smooth2
+            lifetime: 240
+            cone: 360
+            length: 350
+            colorFrom: FF0081AA
+            colorTo: C3004E00
+        }
+        {
+            type: ParticleEffect
+            particles: 80
+            sizeFrom: 1
+            sizeTo: 14
+            sizeInterp: circleOut
+            colorInterp: smooth2
+            lifetime: 240
+            cone: 360
+            length: 350
+            colorFrom: FF0081AA
+            colorTo: C3004E00
+        }
+    ]
+}
+destroyBullet: {
+type: MissileBulletType
+splashDamageRadius: 240
+splashDamage: 1
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: subspaces-poison
+statusDuration: 7200
+despawnEffect: none
+trailEffect: none
+}
