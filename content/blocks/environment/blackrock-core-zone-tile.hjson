@@ -1,6 +1,6 @@
 type: Floor
 name: Blackrock Core Zone Tile
-description: A placeable core zone tile, perfect for placing other cores.
+description: A placeable core zone tile, perfect for cores that require core zones.
 details: Once placed, it cannot be removed.
 variants: 0
 allowCorePlacement: true
