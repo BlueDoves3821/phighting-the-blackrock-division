@@ -1,0 +1,16 @@
+type: Sorter
+name: "Blackrock Sorter"
+invert: true
+description: '''
+Moves items to the sides if it matches the filter, otherwise, output the item forwards.
+'''
+	requirements: [
+		blackrock-token/2
+	]
+	category: distribution
+  research: {
+    parent: blackrock-sorter
+    requirements: [
+    blackrock-token/4
+]
+}

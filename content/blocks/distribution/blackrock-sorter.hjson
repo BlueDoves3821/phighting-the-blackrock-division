@@ -1,0 +1,15 @@
+type: Sorter
+name: "Blackrock Sorter"
+description: '''
+Moves items forwards if it matches the filter, otherwise, output the item to the sides.
+'''
+	requirements: [
+		blackrock-token/2
+	]
+	category: distribution
+  research: {
+    parent: blackrock-duct
+    requirements: [
+    blackrock-token/4
+]
+}
