@@ -15,6 +15,14 @@ blackrock-token/150
     ]
 }
    {
+    unit: grav-disruptor
+    time: 1800
+    requirements: [
+blackrock-token/120
+grav-token/120
+    ]
+}
+   {
     unit: medkit-support-unit
     time: 600
     requirements: [
