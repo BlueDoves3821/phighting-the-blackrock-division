@@ -33,6 +33,14 @@ blackrock-token/50
 biograft-token-zeta/50
     ]
  }
+   {
+    unit: biograft-zeta-guardian-maker
+    time: 800
+    requirements: [
+blackrock-token/35
+biograft-token-zeta/35
+    ]
+ }
 ]
 researchCost: [
   blackrock-token/300
