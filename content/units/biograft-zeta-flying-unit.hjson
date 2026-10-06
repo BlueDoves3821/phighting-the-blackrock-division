@@ -25,6 +25,7 @@ buildRange: 750
 buildSpeed: 30
 engineSize: 0
 payloadCapacity: 2400
+engineColor: FF6A00
 engines: [
   {
     x: 0

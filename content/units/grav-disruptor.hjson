@@ -19,6 +19,7 @@ moveSoundVolume: 0.25
 moveSoundPitchMin: 1
 moveSoundPitchMax: 1
 commands: [move, enterPayload, assist]
+engineColor: 8378DF
 engines: [
   {
     x: 0

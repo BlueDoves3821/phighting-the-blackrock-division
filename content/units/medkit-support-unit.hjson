@@ -19,6 +19,7 @@ moveSoundPitchMin: 1
 moveSoundPitchMax: 2
 engineSize: 0
 buildSpeed: 15
+engineColor: 2CBFA2
 engines: [
   {
     x: 0

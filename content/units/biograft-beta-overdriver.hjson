@@ -19,6 +19,7 @@ stepSound: walkerStepSmall
 drawCell: false
 engineSize: 2
 engineOffset: 5
+engineColor: B480FF
 prioity: 0.05
 immunities: [biografts-overdrive]
 weapons: [

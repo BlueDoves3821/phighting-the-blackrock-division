@@ -24,6 +24,7 @@ itemCapacity: 300
 mineItems: []
 engineSize: 0
 commands: [move, enterPayload, mine, assist]
+engineColor: FF6A00
 engines: [
   {
     x: 0
