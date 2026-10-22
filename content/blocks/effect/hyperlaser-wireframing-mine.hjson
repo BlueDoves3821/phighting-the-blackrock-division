@@ -1,0 +1,38 @@
+ type: ShockMine
+ name: "[#2B90B4]Hyperlaser []Wireframing Mine"
+ description: "Applies [#2B90B4]hyperlaser's []wireframe onto ground units who stepped on the mine."
+ underBullets: true
+ health: 250
+ cooldown: 20
+ lightningColor: 2B90B4
+ damage: 10
+ length: 15
+ tendrils: 1
+ tileDamage: 0
+ baseShake: 5
+ priority: -1
+ bullet: {
+type: MissileBulletType
+splashDamageRadius: 40
+splashDamage: 5
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+status: hyperlasers-wireframe
+statusDuration: 3600
+despawnEffect: none
+trailEffect: none
+shootSound: wireframer-shoot
+}
+ category: effect
+  research: {
+parent: hyperlaser-token-exchanger
+requirements: [
+  blackrock-token/10
+  hyperlaser-token/10
+]
+}
+requirements : [
+  blackrock-token/10
+  hyperlaser-token/10
+]
