@@ -1,0 +1,25 @@
+type: Accelerator
+name: "Blackrock Core Accelerator"
+description: '''
+An accelerator for the blackrock core, requires power & 10k battery power reserves in order to operate.
+'''
+consumes: {
+ power: 5
+}
+powerBufferRequirement: 10000
+health: 3500
+armor: 15
+size: 5
+category: effect
+ringColor: 646567ff
+lightningColor: 646567ff
+launchBlock: blackrock-core
+requirements: [
+  blackrock-token/2000
+]
+	research: {
+	parent: blackrock-core
+	requirements: [
+  blackrock-token/4000
+  ]
+}
