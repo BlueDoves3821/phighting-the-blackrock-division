@@ -1,0 +1,29 @@
+type: RepairTower
+name: "[#2CBFA2]Medkit []Unit Regenerator"
+description: '''
+Regenerates all units in a radius, doesn't heal as much as the unit repairer, but useful in mass regeneration.
+'''
+size: 2
+health: 600
+squareSprite: false
+liquidCapacity: 100
+range: 200
+healAmount: 2.5
+glowColor: 2CBFA27F
+circleColor: 2CBFA2FF
+squareRad: 2.75
+consumes: {
+  power: 1
+}
+coolantMultiplier: 2
+acceptCoolant: true
+researchCost: [
+  blackrock-token/120
+  medkit-token/120
+]
+category: units
+research: medkit-unit-repairer
+requirements: [
+  blackrock-token/60
+  medkit-token/60
+]
