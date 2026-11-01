@@ -11,6 +11,9 @@ maxAmmo: 10
 reload: 90
 inaccuracy: 0
 shootCone: 360
+rotate: false
+rotateDraw: false
+rotateDrawEditor: false
 rotateSpeed: 0
 soundPitchMin: 1
 soundPitchMax: 1
