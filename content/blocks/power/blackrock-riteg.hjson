@@ -1,0 +1,50 @@
+  name: "Blackrock RITEG"
+  description: '''
+Generates power by using the heat from decaying radioactive materials, requires a bit of [#8378DF]grav []coolant to operate, a bit more efficent than the flammable generator.
+  '''
+  type: ConsumeGenerator
+  size: 2
+  health: 500
+  hasItems: true
+  itemCapacity: 50
+  liquidCapacity: 100
+  ambientSound: loopThoriumReactor
+  ambientSoundVolume: 0.25
+  powerProduction: 5
+  itemDuration: 1200
+  generateEffect: rocketSmokeLarge
+  consumes: {
+    itemRadioactive: {}
+  liquids: [
+    grav-coolant/0.1
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+			{
+				type: DrawRegion
+				suffix: -bottom
+			}
+			{
+				type: DrawLiquidTile
+			 drawLiquid: grav-coolant
+				padding: 0
+			}
+			{
+				type: DrawDefault
+			}
+			{
+				type: DrawGlowRegion
+    alpha: 0.1
+			}
+]
+}
+researchCost: [
+  blackrock-token/100
+]
+category: power
+research: blackrock-flammable-generator
+requirements: [
+  blackrock-token/50
+]
