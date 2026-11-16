@@ -8,10 +8,15 @@ Light: FF0066
 Middle: DF0059
 Dark: C3004E
 
-Biograft Token (Zeta)
+Biograft Token (Zeta Legacy)
 Light: FF6A00
 Middle: DF5D00
 Dark: C35100
+
+Biograft Token (Zeta)
+Light: FF5405
+Middle: DF4904
+Dark: C34003
 
 Biograft Token (Beta)
 Light: B480FF
