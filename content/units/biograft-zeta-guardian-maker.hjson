@@ -1,6 +1,6 @@
 type: flying
 name: '''
-[#FF6A00]Zeta Biograft []Guardian Maker
+[#FF5405]Zeta Biograft []Guardian Maker
 '''
 description: '''
 Applies the guardian status to ally units, capable of mining & defending itself but can't build.
@@ -74,9 +74,9 @@ bullet: {
     type: BasicBulletType
     trailWidth: 2.5
     trailLength: 2
-    frontColor: FF6A00
-    backColor: DF5D00
-    trailColor: C35100
+    frontColor: FF5405
+    backColor: DF4904
+    trailColor: C34003
     width: 8
     height: 8
     reloadMultiplier: 3
@@ -99,8 +99,8 @@ bullet: {
     type: BasicBulletType
     speed: 5
     lifetime: 8
-    frontColor: FF6A00
-    backColor: DF5D00
+    frontColor: FF5405
+    backColor: DF4904
     height: 3
     width: 3
     damage: 2.5

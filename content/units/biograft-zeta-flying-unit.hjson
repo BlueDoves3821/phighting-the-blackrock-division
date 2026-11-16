@@ -1,6 +1,6 @@
 type: payload
 name: '''
-[#FF6A00]Zeta Biograft []Flying Unit
+[#FF5405]Zeta Biograft []Flying Unit
 '''
 description: '''
 A fast attacking unit, capable of mining, building & picking up payloads, fragile.
@@ -25,7 +25,7 @@ buildRange: 750
 buildSpeed: 30
 engineSize: 0
 payloadCapacity: 2400
-engineColor: FF6A00
+engineColor: FF5405
 engines: [
   {
     x: 0
@@ -68,9 +68,9 @@ bullet: {
     type: BasicBulletType
     trailWidth: 2.5
     trailLength: 2
-    frontColor: FF6A00
-    backColor: DF5D00
-    trailColor: C35100
+    frontColor: FF5405
+    backColor: DF4904
+    trailColor: C34003
     width: 8
     height: 8
     reloadMultiplier: 3
@@ -93,8 +93,8 @@ bullet: {
     type: BasicBulletType
     speed: 5
     lifetime: 8
-    frontColor: FF6A00
-    backColor: DF5D00
+    frontColor: FF5405
+    backColor: DF4904
     height: 3
     width: 3
     damage: 10
