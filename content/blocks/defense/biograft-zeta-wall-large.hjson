@@ -1,4 +1,4 @@
-name: "Large [#FF6A00]Zeta Biograft []Wall"
+name: "Large [#FF5405]Zeta Biograft []Wall"
 description: '''
 Shoots out lightning when attacked, fragile.
 '''
@@ -10,7 +10,7 @@ Shoots out lightning when attacked, fragile.
     lightningChance: 250
     lightningDamage: 70
     lightningLength: 32
-    lightningColor: FF6A00FF
+    lightningColor: FF5405FF
 	requirements: [
 		blackrock-token/24
   biograft-token-zeta/24
