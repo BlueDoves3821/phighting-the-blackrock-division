@@ -166,9 +166,9 @@ description: "An upgraded turret, fires projectiles at a much fast velocities, m
     type: BasicBulletType
     trailWidth: 2.5
     trailLength: 2
-    frontColor: FF6A00
-    backColor: DF5D00
-    trailColor: C35100
+    frontColor: FF5405
+    backColor: DF4904
+    trailColor: C34003
     width: 8
     height: 8
     rangeChange: 120
@@ -195,8 +195,8 @@ description: "An upgraded turret, fires projectiles at a much fast velocities, m
     type: BasicBulletType
     speed: 5
     lifetime: 8
-    frontColor: FF6A00
-    backColor: DF5D00
+    frontColor: FF5405
+    backColor: DF4904
     height: 3
     width: 3
     damage: 10
