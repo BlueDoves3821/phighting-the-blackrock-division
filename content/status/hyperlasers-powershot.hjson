@@ -6,7 +6,7 @@ speedMultiplier: 0.9
 damage: 0.5
 transitionDamage: 1000
 affinities: [hyperlasers-wireframe]
-outline: false
+outline: true
 effect: {
     type: MultiEffect
     effects: [

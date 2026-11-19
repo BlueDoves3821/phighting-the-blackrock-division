@@ -7,7 +7,7 @@ damageMultiplier: 5
 speedMultiplier: 8
 intervalDamage: 2
 intervalDamageTime: 5
-outline: false
+outline: true
 effectChance: 2
 effect: {
     type: MultiEffect

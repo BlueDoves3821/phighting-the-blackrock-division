@@ -5,7 +5,7 @@ Reacts to hyperlaser's powershot, dealing damage.
 speedMultiplier: 0.85
 transitionDamage: 1000
 affinities: [hyperlasers-powershot]
-outline: false
+outline: true
 effectChance: 0.01
 effect: {
     type: MultiEffect
