@@ -1,0 +1,179 @@
+type: ItemTurret
+requirements: [
+blackrock-token/65
+hyperlaser-token/65
+]
+name: "[#2B90B4]Hyperlaser []Voltaic Grenade Thrower"
+description: '''
+Throws a voltaic grenade at units, wireframes units caught in the explosion, limited range.
+'''
+health: 800
+category: turret
+range: 960
+smokeEffect: none
+reload: 75
+recoil: 1
+shake: 2
+size: 2
+drawer: {
+type: DrawTurret
+type: DrawTurret
+basePrefix: reinforced-
+parts: [
+{
+suffix: "-voltaic"
+progress: reload
+color: ffffff
+colorTo: ffffff00
+under: true
+outline: false
+y: 0
+}
+]
+}
+ammoTypes: {
+  hyperlaser-token: {
+    type: ArtilleryBulletType
+    parts: [
+      {
+        type: RegionPart
+        name: phighting-the-blackrock-division-hyperlaser-voltaic-grenade-thrower-voltaic
+        layer: 111
+        outline: false
+        progress: life
+        moveRot: 360
+      }
+    ]
+    shootSound: hyperlaser-grenade-throw
+    absorbable: false
+    backColor: 00000000
+    damage: 0
+    splashDamage: 0
+    splashDamageRadius: 0
+    lifetime: 720
+    speed: 5
+    trailColor: 2B90B4
+    trailEffect: none
+    trailMult: 7
+    trailSize: 2
+    shootEffect: none
+    despawnSound: none
+    hitSound: none
+    fragBullets: 1
+    fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 0
+splashDamage: 0
+splashDamagePierce: true
+instantDisappear: true
+collides: false
+absorbable: false
+despawnEffect: [
+    {
+    type: WaveEffect
+    lifetime: 45
+    sizeFrom: 120
+    sizeTo: 120
+    interp: exp5Out
+    strokeFrom: 0
+    strokeTo: 4
+    colorFrom: 2B90B400
+    colorTo: 8CFBFFC8
+}
+    {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 0
+    sizeTo: 120
+    length: 0
+    lifetime: 45
+    colorFrom: 2B90B400
+    colorTo: 8CFBFF40
+    }
+{
+type: SoundEffect
+sound: wireframer-charge
+maxPitch: 1
+minPitch: 1
+minVolume: 1
+maxVolume: 1
+effect: none
+}
+]
+fragSpread: 0
+fragRandomSpread: 0
+fragBullets: 1
+fragAngle: 0
+fragBullet: {
+type: MissileBulletType
+splashDamageRadius: 120
+splashDamage: 20
+splashDamagePierce: true
+lifetime: 45
+speed: 0
+width: 0
+height: 0
+backColor: 00000000
+frontColor: 00000000
+trailEffect: none
+collides: false
+absorbable: false
+status: hyperlasers-wireframe
+statusDuration: 2400
+despawnSound: wireframer-shoot
+    parts: [
+      {
+        type: RegionPart
+        name: phighting-the-blackrock-division-hyperlaser-voltaic-grenade-thrower-voltaic
+        layer: 111
+        outline: false
+        progress: life
+        moveRot: 0
+      }
+    ]
+fragSpread: 0
+fragRandomSpread: 0
+fragBullets: 1
+fragAngle: 0
+fragBullet: {
+type: BasicBulletType
+damage: 0
+instantDisappear: true
+collides: false
+absorbable: false
+despawnEffect: [
+        {
+           type: WaveEffect
+            sizeFrom: 120
+            sizeTo: 300
+            strokeFrom: 6
+            strokeTo: 0
+            interp: exp5Out
+            lifetime: 240
+            colorFrom: 8CFBFFC8
+            colorTo: 2B90B400
+        }
+        {
+type: ParticleEffect
+length: 0
+sizeFrom: 120
+sizeTo: 120
+interp: exp5Out
+colorFrom: 8CFBFFC8
+colorTo: 2B90B400
+lifetime: 240
+particles: 1
+}
+]
+}
+}
+}
+}
+}
+research: {
+    parent: hyperlaser-wireframer
+    requirements: [
+blackrock-token/130
+hyperlaser-token/130
+]
+}

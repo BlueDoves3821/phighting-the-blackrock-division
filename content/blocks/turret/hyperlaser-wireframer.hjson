@@ -32,7 +32,7 @@ drawer: {
     hyperlaser-token: {
         type: MissileBulletType
         splashDamageRadius: 380
-        splashDamage: 20
+        splashDamage: 60
         splashDamagePierce: true
         width: 0.05
         height: 0.05
