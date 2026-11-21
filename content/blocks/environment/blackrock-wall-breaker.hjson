@@ -1,6 +1,6 @@
 type: StaticWall
 name: "Blackrock Wall Breaker"
-description: "When placed on top of a wall, it replaces it with itself, can be broken down to clear a path for units/logistics."
+description: "When placed on top of a wall, it replaces it with itself, can be broken down to clear a path for units/logistics, requires a set amount of blackrock tokens to construct it."
 details: "[red]WARNING: USING THE WALL BREAKER WILL CAUSE IRREPAIRABLE DAMAGE TO THE SECTOR, USE AT YOUR OWN RISK!"
 variants: 0
 hideDetails: false
@@ -9,10 +9,10 @@ breakSound: rockBreak
 instantBuild: true
 instantDeconstruct: true
 researchCost: [
-  blackrock-token/30
+  blackrock-token/1500
 ]
 category: effect
 research: blackrock-core-zone-tile
 requirements: [
-  blackrock-token/15
+  blackrock-token/750
 ]
